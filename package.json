@@ -1,0 +1,22 @@
+{
+  "name": "trektourism",
+  "version": "1.0.0",
+  "description": "Trekking website ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prajjwaldimri/TrekTourism.git"
+  },
+  "author": "Prajjwal",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/prajjwaldimri/TrekTourism/issues"
+  },
+  "homepage": "https://github.com/prajjwaldimri/TrekTourism#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
