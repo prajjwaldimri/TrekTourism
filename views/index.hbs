@@ -2,13 +2,134 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
   <title>{{title}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Pace JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+
   <!-- UIkit CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/css/uikit.min.css" />
+
+  <link rel="stylesheet" href="/static/css/main.css" />
+
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Top Nav -->
+  <!-- Top Nav-->
+  <div class="uk-position-relative">
+
+    <div class="hero" uk-parallax="bgy: -200">
+      <h1 class="uk-width-1-2@m uk-text-center uk-heading-primary" uk-scrollspy="cls:uk-animation-scale-down">Trek in the land of the gods</h1>
+      <a href="#who-we-are" class="uk-icon-button uk-margin-small-right uk-position-bottom-center" uk-icon="icon: chevron-down" uk-scrollspy="cls:uk-animation-scale-up" style="display: inline-flex; margin-bottom: 20px;" uk-scroll></a>
+    </div>
+
+    <div class="uk-position-top">
+      <nav class="uk-navbar-container" uk-navbar style="z-index: 980;" uk-sticky="top: 0; animation: uk-animation-slide-top-small; show-on-up: true">
+        <div class="uk-navbar-left">
+          <a class="uk-navbar-item uk-logo" href="#" style="font-family: 'Audiowide', cursive">Uttarakhand Treks</a>
+        </div>
+
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav">
+            <li><a href="#who-we-are" uk-scroll offset="100">Who We Are</a></li>
+            <li><a href="#what-we-offer" uk-scroll offset="100">What We Offer</a></li>
+            <li><a href="#trek-routes" uk-scroll offset="100">Trek Routes</a></li>
+            <li><a href="#contact-us" uk-scroll offset="100">Book Now!</a></li>
+            <li>
+              <a href="tel:333999333" uk-icon="icon: phone">(333)999-333</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Who we are Section -->
+  <div class="uk-section uk-section-secondary">
+    <div class="uk-container" id="who-we-are">
+      <h2 class="uk-heading-line uk-text-center" uk-scrollspy="cls:uk-animation-slide-left-medium"><span>Who We Are</span></h2>
+
+      <article class="uk-article uk-text-center" style="margin-top: 50px;" uk-scrollspy="cls:uk-animation-fade">
+
+        <p class="uk-text-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="uk-section uk-section-primary" style="background: #193e69">
+    <div class="uk-container" id="what-we-offer">
+      <h2 class="uk-heading-line uk-text-center" uk-scrollspy="cls:uk-animation-slide-right-medium"><span>What We Offer</span></h2>
+
+      <article class="uk-article uk-text-center" style="margin-top: 50px;" uk-scrollspy="cls:uk-animation-fade">
+
+        <p class="uk-text-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="uk-section uk-section-secondary">
+    <div class="uk-container" id="trek-routes">
+      <h2 class="uk-heading-line uk-text-center" uk-scrollspy="cls:uk-animation-slide-right-medium"><span>Trek Routes</span></h2>
+
+      <article class="uk-article uk-text-center" style="margin-top: 50px;" uk-scrollspy="cls:uk-animation-fade">
+
+        <p class="uk-text-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="uk-section uk-section-primary" style="background: #27222d">
+    <div class="uk-container" id="contact-us">
+      <h2 class="uk-heading-line uk-text-center"><span>Contact-Us</span></h2>
+
+      <div class="uk-column-1-2 uk-text-center" style="margin-top: 50px">
+        <div>
+          <h4>Corporate Office:</h4>
+          <h5>Gopeshwar, Chamoli</h5>
+          <p>+91-5597721213</p>
+        </div>
+
+        <div class="contact-form">
+          <form>
+            <div class="uk-margin">
+              <div class="uk-inline">
+                <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                <input class="uk-input" type="email" id="form-email">
+              </div>
+            </div>
+
+            <div class="uk-margin">
+              <div class="uk-inline">
+                <span class="uk-form-icon" uk-icon="icon: comment"></span>
+                <input class="uk-input" type="text" id="form-message">
+              </div>
+            </div>
+
+            <button class="uk-button uk-button-default">Submit</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- UIkit JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>

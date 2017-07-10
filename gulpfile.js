@@ -4,6 +4,7 @@ const uglify = require('gulp-uglify');
 const pump = require('pump');
 const sass = require('gulp-sass');
 const minifyCSS = require('gulp-csso');
+const autoprefixer = require('gulp-autoprefixer');
 
 // Minify JS
 gulp.task('uglify-js', function (cb) {
@@ -25,6 +26,10 @@ gulp.task('uglify-sass', function (cb) {
       gulp.src('source/sass/*.scss'),
       changed('public/css'),
       sass(),
+      autoprefixer({
+        browsers: ['last 2 versions'],
+        cascade: false
+      }),
       minifyCSS(),
       gulp.dest('public/css')
     ],
@@ -34,6 +39,6 @@ gulp.task('uglify-sass', function (cb) {
 
 gulp.task('watch', function () {
   gulp.watch('source/js/*.js', ['uglify-js']);
-  gulp.watch('source/sass/*.sass', ['uglify-sass']);
+  gulp.watch('source/sass/*.scss', ['uglify-sass']);
   gulp.watch('source/views/*.html', ['uglify-html']);
 });
