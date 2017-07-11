@@ -10,6 +10,8 @@ app.get('/', function (req, res) {
   res.render('index', { title: 'Uttarakhand Treks' });
 });
 
-app.listen(3000, function () {
-  console.log('Site up on port 3000');
+var PORT = process.env.PORT || 3000;
+
+app.listen(PORT, function () {
+  console.log(`Site up on ${PORT}`);
 });
