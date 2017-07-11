@@ -19,6 +19,25 @@
 </head>
 
 <body>
+
+  <!-- Mobile Nav -->
+  <div class="uk-offcanvas-content">
+
+    <div id="offcanvas-nav-primary" uk-offcanvas="flip: true;">
+      <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+          <li><a href="#who-we-are" uk-scroll offset="100">Who We Are</a></li>
+          <li><a href="#what-we-offer" uk-scroll offset="100">What We Offer</a></li>
+          <li><a href="#trek-routes" uk-scroll offset="100">Trek Routes</a></li>
+          <li><a href="#contact-us" uk-scroll offset="100">Book Now!</a></li>
+          <li>
+            <a href="tel:333999333" uk-icon="icon: phone">Call Now: (333)999-333</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
   <!-- Top Nav-->
   <div class="uk-position-relative">
 
@@ -34,7 +53,7 @@
         </div>
 
         <div class="uk-navbar-right">
-          <ul class="uk-navbar-nav">
+          <ul class="uk-navbar-nav uk-visible@m">
             <li><a href="#who-we-are" uk-scroll offset="100">Who We Are</a></li>
             <li><a href="#what-we-offer" uk-scroll offset="100">What We Offer</a></li>
             <li><a href="#trek-routes" uk-scroll offset="100">Trek Routes</a></li>
@@ -43,6 +62,10 @@
               <a href="tel:333999333" uk-icon="icon: phone">(333)999-333</a>
             </li>
           </ul>
+
+          <a class="uk-navbar-toggle uk-hidden@m" href="#" uk-toggle="target: #offcanvas-nav-primary">
+          <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left"></span>
+          </a>
         </div>
       </nav>
     </div>
