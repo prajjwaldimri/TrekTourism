@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(n){(new WOW).init()});
