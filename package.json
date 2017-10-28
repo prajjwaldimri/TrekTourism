@@ -1,0 +1,36 @@
+{
+  "name": "trektourism",
+  "version": "1.0.0",
+  "description": "Website for trekking",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prajjwaldimri/TrekTourism.git"
+  },
+  "author": "Prajjwal Dimri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prajjwaldimri/TrekTourism/issues"
+  },
+  "homepage": "https://github.com/prajjwaldimri/TrekTourism#readme",
+  "dependencies": {
+    "eslint": "^4.10.0",
+    "eslint-config-semistandard": "^11.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-uglify": "^3.0.0",
+    "install": "^0.10.1",
+    "npm": "^5.5.1",
+    "pump": "^1.0.2"
+  }
+}
