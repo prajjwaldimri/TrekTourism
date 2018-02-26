@@ -17,8 +17,5 @@
   "bugs": {
     "url": "https://github.com/prajjwaldimri/TrekTourism/issues"
   },
-  "homepage": "https://github.com/prajjwaldimri/TrekTourism#readme",
-  "devDependencies": {
-    "webpack": "^4.0.0"
-  }
+  "homepage": "https://github.com/prajjwaldimri/TrekTourism#readme"
 }
