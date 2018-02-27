@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const pug = require('gulp-pug');
 const imagemin = require('gulp-imagemin');
+const imageresize = require('gulp-image-resize');
 const sass = require('gulp-sass');
 const uglify = require('gulp-uglify');
 const babel = require('gulp-babel');
@@ -34,6 +35,11 @@ gulp.task('js', function () {
 gulp.task('images', function () {
   return gulp
     .src('./src/images/*')
+    .pipe(
+      imageresize({
+        percentage: 50
+      })
+    )
     .pipe(
       imagemin([
         imagemin.jpegtran({

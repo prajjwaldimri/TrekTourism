@@ -1,5 +1,6 @@
-body {
-  padding: 30px; }
+@media (min-width: 1024px) {
+  body {
+    padding: 30px; } }
 
 .hero-main {
   background-image: url(https://images.pexels.com/photos/897014/pexels-photo-897014.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb);

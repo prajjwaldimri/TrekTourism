@@ -1,7 +1,9 @@
 @import "_colors.scss";
 
-body {
-  padding: 30px;
+@media (min-width: 1024px) {
+  body {
+    padding: 30px;
+  }
 }
 
 .hero-main {

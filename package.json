@@ -34,6 +34,7 @@
     "gulp-babel": "^7.0.1",
     "gulp-cli": "^2.0.1",
     "gulp-concat": "^2.6.1",
+    "gulp-image-resize": "^0.13.0",
     "gulp-imagemin": "^4.1.0",
     "gulp-pug": "^3.3.0",
     "gulp-sass": "^3.1.0",
