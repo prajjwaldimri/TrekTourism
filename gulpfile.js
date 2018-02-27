@@ -33,15 +33,21 @@ gulp.task('js', function () {
 
 gulp.task('images', function () {
   return gulp
-    .src('./src/images/**/*')
-    .pipe(imagemin({ optimizationLevel: 5 }))
+    .src('./src/images/*')
+    .pipe(
+      imagemin([
+        imagemin.jpegtran({
+          progressive: true
+        })
+      ])
+    )
     .pipe(gulp.dest('./dist/img'));
 });
 
 gulp.task('watch', function () {
   gulp.watch('./src/js/*.js', ['js']);
   gulp.watch('./src/scss/*.scss', ['scss']);
-  gulp.watch('./src/images/*.*', ['images']);
+  gulp.watch('./src/images/*', ['images']);
   gulp.watch('./src/views/*.pug', ['pug']);
 });
 

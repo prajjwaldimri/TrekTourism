@@ -29,6 +29,7 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-react": "^7.7.0",
     "eslint-plugin-standard": "^3.0.1",
+    "gifsicle": "^3.0.4",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.1",
     "gulp-cli": "^2.0.1",
@@ -38,6 +39,9 @@
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.0",
-    "node-sass": "^4.7.2"
+    "jpegtran-bin": "^3.2.0",
+    "node-sass": "^4.7.2",
+    "optipng-bin": "^4.0.0",
+    "svgo": "^1.0.5"
   }
 }
