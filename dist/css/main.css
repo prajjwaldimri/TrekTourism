@@ -5,3 +5,15 @@
 .hero-main {
   background-image: url(/dist/img/DSC_0054.JPG);
   height: 95vh; }
+
+#we-provide {
+  background-color: #bdc3c7; }
+
+#trekking-destinations {
+  background-color: #34495e; }
+
+#treks-to-explore {
+  background-color: #2980b9; }
+
+#upcoming-events {
+  background-color: #2c3e50; }
