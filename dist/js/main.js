@@ -1,1 +1,1 @@
-"use strict";alert("Yo");
+"use strict";
