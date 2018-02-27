@@ -1,1 +1,1 @@
-"use strict";console.log("Hello");
+"use strict";alert("Yo");
