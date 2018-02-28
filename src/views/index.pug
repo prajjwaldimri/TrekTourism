@@ -98,19 +98,34 @@ html(lang="en")
           .uk-position-center-right.uk-position-small.uk-hidden-hover(uk-slidenav-next uk-slider-item="next")
 
     .uk-section(id="pricing-calculator")
-      .uk-background.uk-height-large.uk-background-default.uk-flex.uk-flex-column.uk-flex-middle.uk-flex-center
+      .uk-background.uk-background-default.uk-flex.uk-flex-column.uk-flex-middle.uk-flex-center
         .uk-dark.uk-heading-divider.uk-text-center
           h1.uk-text-uppercase(uk-scrollspy="cls:uk-animation-fade") Pricing Calculator
           span.uk-text-lead.uk-heading-bullet.uk-text-uppercase(uk-scrollspy="cls:uk-animation-fade; delay:500") Fair Prices Upfront.
 
-        .uk-tile.uk-tile-muted.uk-margin-large-top
-          .uk-inline
-            button.uk-button.uk-button-default(type="button") Click to see list of treks.
-            div(uk-dropdown="mode: click")
-          form
-            fieldset.uk-fieldset
-              .uk-margin
-                .uk-input(type="number", placeholder="Number of persons to accomodate")
+        .uk-tile.uk-tile-secondary.uk-margin-large-top(style="width: 90%;")
+          .uk-grid-large.uk-grid-divider.uk-grid-match(uk-grid)
+            .uk-grid.uk-grid-match(class="uk-width-3-4")
+              .uk-inline(class="uk-width-1-2")
+                button.uk-button.uk-button-default(type="button") Click to see list of Treks
+                div(uk-dropdown="mode: click")
+
+              form(class="uk-width-1-2")
+                fieldset.uk-fieldset
+                  .uk-margin
+                    input.uk-input(type="number", placeholder="Number of persons to accomodate")
+
+            div(class="uk-width-1-4")
+              h2(id="price").uk-text-success.uk-text-nowrap.uk-text-middle $ 40,000
+
+            div(class="uk-width-1-1")
+              .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin.uk-child-width-1-2(uk-grid)
+                .uk-card-media-left.uk-cover-container
+                  img(src="/dist/img/DSC_0330.JPG", uk-cover)
+                  canvas(width="300", height="300")
+                .uk-card-body
+                  span.uk-card-title Trek Name
+                  p Trek Description
 
 
     section(id="contact-us")
