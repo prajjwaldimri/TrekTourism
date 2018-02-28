@@ -30,7 +30,7 @@ html(lang="en")
             div(class="uk-width-1-3")
               .uk-card.uk-card-default.uk-card-hover
                 .uk-card-media-top
-                  img(src="/dist/img/DSC_0051.JPG", alt="Camping Image")
+                  img(src="/dist/img/DSC_0329.JPG", alt="Camping Image")
                 .uk-card-body
                   h3.uk-card-title Camping
                   ul.uk-list.uk-list-small.uk-list-divider
@@ -42,7 +42,7 @@ html(lang="en")
             div(class="uk-width-1-3")
               .uk-card.uk-card-secondary.uk-card-hover
                 .uk-card-media-top
-                  img(src="/dist/img/DSC_0051.JPG", alt="Camping Image")
+                  img(src="/dist/img/DSC_0072.JPG", alt="Camping Image")
                 .uk-card-body
                   h3.uk-card-title Trekking
                   ul.uk-list.uk-list-small.uk-list-divider
@@ -64,13 +64,54 @@ html(lang="en")
                     li Event Camping
 
     .uk-section(id="trekking-destinations")
-      .uk-background.uk-height-large
+      .uk-background.uk-flex.uk-flex-column.uk-flex-middle.uk-flex-center
+        .uk-light
+          h1.uk-text-uppercase.uk-heading-divider.uk-margin-large-bottom(uk-scrollspy="cls:uk-animation-fade") Destinations
 
-    .uk-section(id="treks-to-explore")
-      .uk-background.uk-height-large
+        .uk-position-relative.uk-visible-toggle.uk-light.uk-container(uk-slider="clsActivated: uk-transition-active; index: 3; autoplay: true; autoplay-interval: 5000; pause-on-hover: true")
+          ul.uk-slider-items.uk-child-width-1-2
+            li
+              .uk-panel
+                img(src="/dist/img/DSC_0051.JPG")
+                .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center-uk-transition-slide-bottom
+                  h3.uk-margin-bottom RoopKund Bedni Trek
+                  p.uk-margin-remove Lorem ipsum
+            li
+              .uk-panel
+                img(src="/dist/img/DSC_0054.JPG")
+                .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center-uk-transition-slide-bottom
+                  h3.uk-margin-bottom Bottom
+                  p.uk-margin-remove Lorem ipsum
+            li
+              .uk-panel
+                img(src="/dist/img/DSC_0072.JPG")
+                .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center-uk-transition-slide-bottom
+                  h3.uk-margin-bottom RoopKund Bedni Trek
+                  p.uk-margin-remove Lorem ipsum
+            li
+              .uk-panel
+                img(src="/dist/img/DSC_0329.JPG")
+                .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center-uk-transition-slide-bottom
+                  h3.uk-margin-bottom Bottom
+                  p.uk-margin-remove Lorem ipsum
+          .uk-position-center-left.uk-position-small.uk-hidden-hover(uk-slidenav-previous uk-slider-item="previous")
+          .uk-position-center-right.uk-position-small.uk-hidden-hover(uk-slidenav-next uk-slider-item="next")
 
-    .uk-section(id="upcoming-events")
-      .uk-background.uk-height-large
+    .uk-section(id="pricing-calculator")
+      .uk-background.uk-height-large.uk-background-default.uk-flex.uk-flex-column.uk-flex-middle.uk-flex-center
+        .uk-dark.uk-heading-divider.uk-text-center
+          h1.uk-text-uppercase(uk-scrollspy="cls:uk-animation-fade") Pricing Calculator
+          span.uk-text-lead.uk-heading-bullet.uk-text-uppercase(uk-scrollspy="cls:uk-animation-fade; delay:500") Fair Prices Upfront.
+
+        .uk-tile.uk-tile-muted.uk-margin-large-top
+          .uk-inline
+            button.uk-button.uk-button-default(type="button") Click to see list of treks.
+            div(uk-dropdown="mode: click")
+          form
+            fieldset.uk-fieldset
+              .uk-margin
+                .uk-input(type="number", placeholder="Number of persons to accomodate")
+
 
     section(id="contact-us")
       .uk-background.uk-background-secondary.uk-height-large.uk-background-blend-multiply.uk-background-cover.uk-flex.uk-flex-column.uk-flex-middle.uk-flex-center
