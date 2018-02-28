@@ -35,3 +35,11 @@
   width: 72px;
   height: 72px;
 }
+
+.uk-card-hover {
+  transition: all 500ms;
+}
+
+.uk-card-hover:hover {
+  transform: translateY(-5%);
+}

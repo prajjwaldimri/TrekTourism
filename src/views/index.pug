@@ -22,30 +22,68 @@ html(lang="en")
             span.uk-margin-small-right(uk-icon="chevron-down")
             span Read More
 
-      section(id="we-provide")
-        .uk-background.uk-height-large
+    .uk-section(id="we-provide")
+      .uk-background.uk-flex.uk-flex-column.uk-flex-middle.uk-flex-center
+        .uk-text-center
+          h1.uk-text-uppercase.uk-text-primary.uk-heading-divider(uk-scrollspy="cls:uk-animation-fade") Services
+          .uk-container(uk-grid).uk-margin-large-top
+            div(class="uk-width-1-3")
+              .uk-card.uk-card-default.uk-card-hover
+                .uk-card-media-top
+                  img(src="/dist/img/DSC_0051.JPG", alt="Camping Image")
+                .uk-card-body
+                  h3.uk-card-title Camping
+                  ul.uk-list.uk-list-small.uk-list-divider
+                    li Luxury camping
+                    li Eco-Camp
+                    li Jungle Camp
+                    li Event Camping
 
-      section(id="trekking-destinations")
-        .uk-background.uk-height-large
+            div(class="uk-width-1-3")
+              .uk-card.uk-card-secondary.uk-card-hover
+                .uk-card-media-top
+                  img(src="/dist/img/DSC_0051.JPG", alt="Camping Image")
+                .uk-card-body
+                  h3.uk-card-title Trekking
+                  ul.uk-list.uk-list-small.uk-list-divider
+                    li Event Trekking
+                    li Group Trekking
+                    li Solo Trekking
+                    li Family Trekking
 
-      section(id="treks-to-explore")
-        .uk-background.uk-height-large
+            div(class="uk-width-1-3")
+              .uk-card.uk-card-primary.uk-card-hover
+                .uk-card-media-top
+                  img(src="/dist/img/DSC_0051.JPG", alt="Camping Image")
+                .uk-card-body
+                  h3.uk-card-title Camping Accessories
+                  ul.uk-list.uk-list-small.uk-list-divider
+                    li Tent
+                    li Mattresses
+                    li Sleeping Bags
+                    li Event Camping
 
-      section(id="upcoming-events")
-        .uk-background.uk-height-large
+    .uk-section(id="trekking-destinations")
+      .uk-background.uk-height-large
 
-      section(id="contact-us")
-        .uk-background.uk-background-secondary.uk-height-large.uk-background-blend-multiply.uk-background-cover.uk-flex.uk-flex-column.uk-flex-middle.uk-flex-center
-          .uk-light.uk-text-center
-            h1.uk-text-uppercase(uk-scrollspy="cls:uk-animation-fade") Contact US
-            span.uk-text-lead(uk-scrollspy="cls:uk-animation-fade; delay:500") We are available 24 hours to help.
+    .uk-section(id="treks-to-explore")
+      .uk-background.uk-height-large
 
-          .social-icons.uk-margin-medium-top
-            a.uk-icon-button.uk-margin-medium-right.icon-button-2x(uk-icon="icon: facebook; ratio: 2;", style="background-color: #3b5998; color:white;", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:1000")
-            a.uk-icon-button.uk-margin-medium-right.icon-button-2x(uk-icon="icon: google; ratio: 2", style="background-color: #34a853; color:white;", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:1500")
-            a.uk-icon-button.uk-margin-medium-right.icon-button-2x(uk-icon="icon: instagram; ratio: 2", style="background-color: #405de6; color:white;", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:2000")
-            a.uk-icon-button.uk-margin-medium-right.icon-button-2x(uk-icon="icon: receiver; ratio: 2", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:2500")
-            a.uk-icon-button.icon-button-2x(uk-icon="icon: whatsapp; ratio: 2", style="background-color: #25d366; color:white;", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:3000")
+    .uk-section(id="upcoming-events")
+      .uk-background.uk-height-large
+
+    section(id="contact-us")
+      .uk-background.uk-background-secondary.uk-height-large.uk-background-blend-multiply.uk-background-cover.uk-flex.uk-flex-column.uk-flex-middle.uk-flex-center
+        .uk-light.uk-text-center
+          h1.uk-text-uppercase.uk-heading-divider(uk-scrollspy="cls:uk-animation-fade") Contact US
+          span.uk-text-lead(uk-scrollspy="cls:uk-animation-fade; delay:500") We are available 24 hours to help.
+
+        .social-icons.uk-margin-medium-top
+          a.uk-icon-button.uk-margin-medium-right.icon-button-2x(uk-icon="icon: facebook; ratio: 2;", style="background-color: #3b5998; color:white;", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:1000")
+          a.uk-icon-button.uk-margin-medium-right.icon-button-2x(uk-icon="icon: google; ratio: 2", style="background-color: #34a853; color:white;", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:1500")
+          a.uk-icon-button.uk-margin-medium-right.icon-button-2x(uk-icon="icon: instagram; ratio: 2", style="background-color: #405de6; color:white;", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:2000")
+          a.uk-icon-button.uk-margin-medium-right.icon-button-2x(uk-icon="icon: receiver; ratio: 2", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:2500")
+          a.uk-icon-button.icon-button-2x(uk-icon="icon: whatsapp; ratio: 2", style="background-color: #25d366; color:white;", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:3000")
 
     script(src="/dist/js/main.js")
 
