@@ -1,14 +1,8 @@
 @import "_colors.scss";
 
-@media (min-width: 1024px) {
-  body {
-    padding: 30px;
-  }
-}
-
 .hero-main {
   background-image: url(/dist/img/DSC_0054.JPG);
-  height: 95vh;
+  height: 100vh;
 }
 
 #we-provide {
@@ -28,10 +22,39 @@
   height: 72px;
 }
 
+@media (min-width: 781px) {
+  .large-social-icons {
+    display: block;
+  }
+  .small-social-icons {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .large-social-icons {
+    display: none;
+  }
+  .small-social-icons {
+    display: block;
+  }
+}
+
 .uk-card-hover {
   transition: all 500ms;
 }
 
 .uk-card-hover:hover {
   transform: translateY(-5%);
+}
+
+// Dropdown content in tile
+a.text-black {
+  color: #999 !important;
+}
+
+#book-button-sticky {
+  position: fixed;
+  top: 90vh;
+  right: 1px;
 }
