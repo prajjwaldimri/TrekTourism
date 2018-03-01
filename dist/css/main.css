@@ -15,6 +15,18 @@
   width: 72px;
   height: 72px; }
 
+@media (min-width: 480px) {
+  .large-social-icons {
+    display: block; }
+  .small-social-icons {
+    display: none; } }
+
+@media only screen and (max-width: 479px) {
+  .large-social-icons {
+    display: none; }
+  .small-social-icons {
+    display: block; } }
+
 .uk-card-hover {
   transition: all 500ms; }
 
