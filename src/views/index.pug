@@ -9,24 +9,28 @@ html(lang="en")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/10.4.2/lazyload.min.js")
 
   body
-    nav(class="uk-navbar-container uk-section-secondary uk-preserve-color uk-height-1-3" uk-navbar style="position: relative; z-index: 980;" uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark; top: 200")
-      div(class="uk-navbar-left")
-        a(class="uk-navbar-item uk-logo" href="#main")
-          img(src="/images/uttarakhandTrek.png", alt="UTTARAKHAND TREK")
-      div(class="uk-navbar-right")
-        ul(class="uk-navbar-nav")
-          li
-            a(href="#main") Home
-          li
-            a(href="#we-provide") Services
-          li
-            a(href="#pricing-calculator") Pricing
-          li
-            a(href="#") About
-          li
-            a(href="#contact-us") Contact
+  div(class=" ")
+    
     section(id="main")
-      .hero-main.uk-background-cover.uk-background-secondary.uk-background-fixed.uk-flex.uk-flex-column.uk-flex-middle.uk-flex-center.uk-background-blend-multiply
+      .hero-main.uk-background-cover.uk-background-secondary.uk-background-fixed.uk-flex.uk-flex-column.uk-flex-middle.uk-background-blend-multiply
+        .uk-preserve-color.uk-width-1-1
+          div(uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200")
+            nav(class="uk-navbar-container uk-height-1-3" uk-navbar style="position: relative; z-index: 980;" )
+              div(class="uk-navbar-left")
+                  a(class="uk-navbar-item uk-logo" href="#main")
+                    img(src="/images/uttarakhandTrek.png", alt="UTTARAKHAND TREK")
+              div(class="uk-navbar-right")
+                  ul(class="uk-navbar-nav")
+                    li
+                      a(href="#main", uk-scroll) Home
+                    li
+                      a(href="#we-provide", uk-scroll) Services
+                    li
+                      a(href="#pricing-calculator", uk-scroll) Pricing
+                    li
+                      a(href="#", uk-scroll) About
+                    li
+                      a(href="#contact-us", uk-scroll) Contact
         .uk-light.uk-text-center.uk-margin-large-top
           h1.uk-heading-primary.uk-text-uppercase(uk-scrollspy="cls:uk-animation-fade") Uttarakhand Treks
           span.uk-text-lead.uk-heading-bullet.uk-text-uppercase(uk-scrollspy="cls:uk-animation-fade; delay:1000") Cause Outside is where life is
