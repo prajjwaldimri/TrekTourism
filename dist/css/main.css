@@ -1,6 +1,6 @@
 .hero-main {
   background-image: url(/dist/img/DSC_0054.JPG);
-  height: 95vh; }
+  height: 100vh; }
 
 #we-provide {
   background-color: #ecf0f1; }
@@ -23,3 +23,8 @@
 
 a.text-black {
   color: #999 !important; }
+
+#book-button-sticky {
+  position: fixed;
+  top: 90vh;
+  right: 1px; }
