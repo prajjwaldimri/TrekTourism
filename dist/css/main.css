@@ -1,0 +1,57 @@
+.hero-main {
+  background-image: url(/dist/img/DSC_0054.JPG);
+  height: 100vh; }
+
+#we-provide {
+  background-color: #ecf0f1; }
+
+#trekking-destinations {
+  background-color: #2980b9; }
+
+#contact-us > div {
+  background-image: url(/dist/img/DSC_0329.JPG); }
+
+.icon-button-2x {
+  width: 72px;
+  height: 72px; }
+
+@media (min-width: 781px) {
+  .large-social-icons {
+    display: block; }
+  .small-social-icons {
+    display: none; } }
+
+@media only screen and (max-width: 780px) {
+  .large-social-icons {
+    display: none; }
+  .small-social-icons {
+    display: block; } }
+
+.uk-card-hover {
+  transition: all 500ms; }
+
+.uk-card-hover:hover {
+  transform: translateY(-5%); }
+
+a.text-black {
+  color: #999 !important; }
+
+#book-button-sticky {
+  position: fixed;
+  top: 90vh;
+  right: 1px; }
+
+/*-----------------FOOTER-----------*/
+.footer nav {
+  margin-left: 400px;
+  margin-bottom: 0px; }
+
+.footer nav ul li {
+  word-spacing: 0px;
+  display: inline-block;
+  color: #fff; }
+
+.footer {
+  width: 100%;
+  background-color: #222;
+  padding: 30px 0px; }
