@@ -1,11 +1,5 @@
 @import "_colors.scss";
 
-@media (min-width: 1024px) {
-  body {
-    padding: 30px;
-  }
-}
-
 .hero-main {
   background-image: url(/dist/img/DSC_0054.JPG);
   height: 95vh;
@@ -34,4 +28,9 @@
 
 .uk-card-hover:hover {
   transform: translateY(-5%);
+}
+
+// Dropdown content in tile
+a.text-black {
+  color: #999 !important;
 }

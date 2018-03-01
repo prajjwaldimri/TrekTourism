@@ -6,7 +6,7 @@ html(lang="en")
     link(href="/dist/css/main.css", rel="stylesheet")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js")
-
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/10.4.2/lazyload.min.js")
 
   body
     section(id="main")
@@ -68,30 +68,30 @@ html(lang="en")
         .uk-light
           h1.uk-text-uppercase.uk-heading-divider.uk-margin-large-bottom(uk-scrollspy="cls:uk-animation-fade") Destinations
 
-        .uk-position-relative.uk-visible-toggle.uk-light.uk-container(uk-slider="clsActivated: uk-transition-active; index: 3; autoplay: true; autoplay-interval: 5000; pause-on-hover: true")
+        .uk-position-relative.uk-visible-toggle.uk-light(uk-slider="clsActivated: uk-transition-active; index: 3; autoplay: true; autoplay-interval: 5000; pause-on-hover: true", style="width: 90%")
           ul.uk-slider-items.uk-child-width-1-2
             li
               .uk-panel
-                img(src="/dist/img/DSC_0051.JPG")
-                .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center-uk-transition-slide-bottom
+                img(data-src="/dist/img/DSC_0051.JPG")
+                .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center.uk-transition-slide-bottom
                   h3.uk-margin-bottom RoopKund Bedni Trek
                   p.uk-margin-remove Lorem ipsum
             li
               .uk-panel
-                img(src="/dist/img/DSC_0054.JPG")
-                .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center-uk-transition-slide-bottom
+                img(data-src="/dist/img/DSC_0054.JPG")
+                .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center.uk-transition-slide-bottom
                   h3.uk-margin-bottom Bottom
                   p.uk-margin-remove Lorem ipsum
             li
               .uk-panel
-                img(src="/dist/img/DSC_0072.JPG")
-                .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center-uk-transition-slide-bottom
+                img(data-src="/dist/img/DSC_0072.JPG")
+                .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center.uk-transition-slide-bottom
                   h3.uk-margin-bottom RoopKund Bedni Trek
                   p.uk-margin-remove Lorem ipsum
             li
               .uk-panel
-                img(src="/dist/img/DSC_0329.JPG")
-                .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center-uk-transition-slide-bottom
+                img(data-src="/dist/img/DSC_0329.JPG")
+                .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center.uk-transition-slide-bottom
                   h3.uk-margin-bottom Bottom
                   p.uk-margin-remove Lorem ipsum
           .uk-position-center-left.uk-position-small.uk-hidden-hover(uk-slidenav-previous uk-slider-item="previous")
@@ -105,28 +105,49 @@ html(lang="en")
 
         .uk-tile.uk-tile-secondary.uk-margin-large-top(style="width: 90%;")
           .uk-grid-large.uk-grid-divider.uk-grid-match(uk-grid)
-            .uk-grid.uk-grid-match(class="uk-width-3-4")
-              .uk-inline(class="uk-width-1-2")
-                button.uk-button.uk-button-default(type="button") Click to see list of Treks
-                div(uk-dropdown="mode: click")
+            .uk-grid.uk-grid-match(class="uk-width-3-4@m")
+              form(class="uk-width-1-2")
+                .uk-margin
+                  label.uk-form-label(for="trek-select") Trek
+                  .uk-form-controls
+                    select.uk-select(id="trek-select")
+                      option(value="satopanth", per-person="10000") Satopanth
+                      option(value="nanda", per-person="30000") Nanda
+                      option(value="chopta", per-person="20000") Chopta
 
               form(class="uk-width-1-2")
-                fieldset.uk-fieldset
-                  .uk-margin
-                    input.uk-input(type="number", placeholder="Number of persons to accomodate")
+                .uk-margin
+                  label.uk-form-label(for="trek-persons") Number of persons to accomodate
+                  .uk-form-controls
+                    input.uk-input(type="number", value="1", id="trek-persons", onchange="CalculateTrekPrice()", min="1", max="100")
 
-            div(class="uk-width-1-4")
-              h2(id="price").uk-text-success.uk-text-nowrap.uk-text-middle $ 40,000
+            div(class="uk-width-1-4@m")
+              h2(id="trek-price").uk-text-success.uk-text-nowrap.uk-margin-small-top $ 40,000
 
-            div(class="uk-width-1-1")
-              .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin.uk-child-width-1-2(uk-grid)
+            div(class="uk-width-1-1", id="trek-details")
+              .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin(uk-grid, class="uk-child-width-1-2@m", id="satopanth")
                 .uk-card-media-left.uk-cover-container
                   img(src="/dist/img/DSC_0330.JPG", uk-cover)
                   canvas(width="300", height="300")
                 .uk-card-body
-                  span.uk-card-title Trek Name
-                  p Trek Description
+                  span.uk-card-title Satopanth
+                  p Details about satopanth
 
+              .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin(uk-grid, class="uk-child-width-1-2@m", id="chopta", style="display:none;")
+                .uk-card-media-left.uk-cover-container
+                  img(src="/dist/img/DSC_0330.JPG", uk-cover)
+                  canvas(width="300", height="300")
+                .uk-card-body
+                  span.uk-card-title Chopta
+                  p Details about chopta
+
+              .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin(uk-grid, class="uk-child-width-1-2@m", id="nanda", style="display:none;")
+                .uk-card-media-left.uk-cover-container
+                  img(src="/dist/img/DSC_0330.JPG", uk-cover)
+                  canvas(width="300", height="300")
+                .uk-card-body
+                  span.uk-card-title Nanda
+                  p Details about Nanda
 
     section(id="contact-us")
       .uk-background.uk-background-secondary.uk-height-large.uk-background-blend-multiply.uk-background-cover.uk-flex.uk-flex-column.uk-flex-middle.uk-flex-center
