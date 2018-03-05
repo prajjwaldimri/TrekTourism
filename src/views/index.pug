@@ -1,22 +1,23 @@
 doctype html
 html(lang="en")
   head
+    meta(http-equiv="Content-Type" content="text/html;charset=UTF-8")
     title Uttarakhand Treks
     link(href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css", rel="stylesheet")
-    link(href="/dist/css/main.css", rel="stylesheet")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/10.4.2/lazyload.min.js")
+    link(href="./dist/css/main.css", rel="stylesheet")
 
   body
     section(id="main")
-      .hero-main.uk-background-cover.uk-background-secondary.uk-background-fixed.uk-flex.uk-flex-column.uk-flex-middle.uk-background-blend-multiply
-        div(class="uk-preserve-color uk-width-1-1")
+      .hero-main.uk-background-cover.uk-background-secondary.uk-background-fixed.uk-flex.uk-flex-column.uk-flex-middle.uk-background-blend-multiply(style="justify-content: center")
+        .uk-preserve-color.uk-width-1-1(id="top-nav")
           div(uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200")
             nav(class="uk-navbar-container uk-height-1-3" uk-navbar style="position: relative; z-index: 980;" )
               div(class="uk-navbar-left")
                   a(class="uk-navbar-item uk-logo" href="#main")
-                    img(src="/images/uttarakhandTrek.png", alt="UTTARAKHAND TREK")
+                    img(src="./images/uttarakhandTrek.png", alt="UTTARAKHAND TREK")
               div(class="uk-navbar-right")
                   ul(class="uk-navbar-nav")
                     li
@@ -27,16 +28,18 @@ html(lang="en")
                       a(href="#pricing-calculator", uk-scroll) Pricing
                     li
                       a(href="#contact-us", uk-scroll) Contact
-        .uk-light.uk-text-center(id="main-heading")
-          h1.uk-heading-primary.uk-text-uppercase(uk-scrollspy="cls:uk-animation-fade") Uttarakhand Treks
-          span.uk-text-lead.uk-heading-bullet.uk-text-uppercase(uk-scrollspy="cls:uk-animation-fade; delay:1000") Cause Outside is where life is
-        div.uk-margin-medium-top.uk-button-group
-          a.uk-button.uk-button-primary.uk-button-large(uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:2000", href="#contact-us", uk-scroll)
-            span.uk-margin-small-right(uk-icon="receiver")
-            span.uk-text-nowrap Book Now!
-          a.uk-button.uk-button-secondary.uk-button-large(uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:3000", href="#we-provide", uk-scroll)
-            span.uk-margin-small-right(uk-icon="chevron-down")
-            span.uk-text-nowrap Read More
+
+        .uk-flex.uk-flex-column.uk-flex-middle
+          .uk-light.uk-text-center
+            h1.uk-heading-primary.uk-text-uppercase(uk-scrollspy="cls:uk-animation-fade") Uttarakhand Treks
+            span.uk-text-lead.uk-heading-bullet.uk-text-uppercase(uk-scrollspy="cls:uk-animation-fade; delay:1000") Cause Outside is where life is
+          div.uk-margin-medium-top.uk-button-group
+            a.uk-button.uk-button-primary.uk-button-large(uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:2000", href="#contact-us", uk-scroll)
+              span.uk-margin-small-right(uk-icon="receiver")
+              span.uk-text-nowrap Book Now!
+            a.uk-button.uk-button-secondary.uk-button-large(uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:3000", href="#we-provide", uk-scroll)
+              span.uk-margin-small-right(uk-icon="chevron-down")
+              span.uk-text-nowrap Read More
 
     .uk-section(id="we-provide")
       .uk-background.uk-flex.uk-flex-column.uk-flex-middle.uk-flex-center
@@ -46,7 +49,7 @@ html(lang="en")
             div(class="uk-width-1-3@m")
               .uk-card.uk-card-default.uk-card-hover
                 .uk-card-media-top
-                  img(src="/dist/img/DSC_0329.JPG", alt="Camping Image")
+                  img(src="./dist/img/DSC_0329.JPG", alt="Camping Image")
                 .uk-card-body
                   h3.uk-card-title Camping
                   ul.uk-list.uk-list-small.uk-list-divider
@@ -58,7 +61,7 @@ html(lang="en")
             div(class="uk-width-1-3@m")
               .uk-card.uk-card-secondary.uk-card-hover
                 .uk-card-media-top
-                  img(src="/dist/img/DSC_0072.JPG", alt="Camping Image")
+                  img(src="./dist/img/DSC_0072.JPG", alt="Camping Image")
                 .uk-card-body
                   h3.uk-card-title Trekking
                   ul.uk-list.uk-list-small.uk-list-divider
@@ -70,7 +73,7 @@ html(lang="en")
             div(class="uk-width-1-3@m")
               .uk-card.uk-card-primary.uk-card-hover
                 .uk-card-media-top
-                  img(src="/dist/img/DSC_0051.JPG", alt="Camping Image")
+                  img(src="./dist/img/DSC_0051.JPG", alt="Camping Image")
                 .uk-card-body
                   h3.uk-card-title Camping Accessories
                   ul.uk-list.uk-list-small.uk-list-divider
@@ -88,25 +91,25 @@ html(lang="en")
           ul.uk-slider-items.uk-child-width-1-2
             li
               .uk-panel
-                img(data-src="/dist/img/DSC_0051.JPG")
+                img(data-src="./dist/img/DSC_0051.JPG")
                 .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center.uk-transition-slide-bottom
                   h3.uk-margin-bottom RoopKund Bedni Trek
                   p.uk-margin-remove Lorem ipsum
             li
               .uk-panel
-                img(data-src="/dist/img/DSC_0054.JPG")
+                img(data-src="./dist/img/DSC_0054.JPG")
                 .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center.uk-transition-slide-bottom
                   h3.uk-margin-bottom Bottom
                   p.uk-margin-remove Lorem ipsum
             li
               .uk-panel
-                img(data-src="/dist/img/DSC_0072.JPG")
+                img(data-src="./dist/img/DSC_0072.JPG")
                 .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center.uk-transition-slide-bottom
                   h3.uk-margin-bottom RoopKund Bedni Trek
                   p.uk-margin-remove Lorem ipsum
             li
               .uk-panel
-                img(data-src="/dist/img/DSC_0329.JPG")
+                img(data-src="./dist/img/DSC_0329.JPG")
                 .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center.uk-transition-slide-bottom
                   h3.uk-margin-bottom Bottom
                   p.uk-margin-remove Lorem ipsum
@@ -144,7 +147,7 @@ html(lang="en")
 
               .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin(uk-grid, class="uk-child-width-1-2@m", id="satopanth")
                 .uk-card-media-left.uk-cover-container
-                  img(src="/dist/img/DSC_0330.JPG", uk-cover)
+                  img(src="./dist/img/DSC_0330.JPG", uk-cover)
                   canvas(width="300", height="300")
                 .uk-card-body
                   span.uk-card-title Satopanth
@@ -152,7 +155,7 @@ html(lang="en")
 
               .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin(uk-grid, class="uk-child-width-1-2@m", id="chopta", style="display:none;")
                 .uk-card-media-left.uk-cover-container
-                  img(src="/dist/img/DSC_0330.JPG", uk-cover)
+                  img(src="./dist/img/DSC_0330.JPG", uk-cover)
                   canvas(width="300", height="300")
                 .uk-card-body
                   span.uk-card-title Chopta
@@ -160,7 +163,7 @@ html(lang="en")
 
               .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin(uk-grid, class="uk-child-width-1-2@m", id="nanda", style="display:none;")
                 .uk-card-media-left.uk-cover-container
-                  img(src="/dist/img/DSC_0330.JPG", uk-cover)
+                  img(src="./dist/img/DSC_0330.JPG", uk-cover)
                   canvas(width="300", height="300")
                 .uk-card-body
                   span.uk-card-title Nanda
@@ -198,5 +201,5 @@ html(lang="en")
               a(href="https://t.me/ayushbahuguna")  Ayush Bahuguna
 
 
-    script(src="/dist/js/main.js")
+    script(src="./dist/js/main.js")
 

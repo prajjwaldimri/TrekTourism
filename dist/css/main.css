@@ -1,9 +1,13 @@
 .hero-main {
-  background-image: url(/dist/img/DSC_0054.JPG);
+  background-image: url(../img/DSC_0054.JPG);
   height: 100vh; }
 
-#main-heading {
-  margin-top: 25vh; }
+#top-nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000; }
 
 #we-provide {
   background-color: #ecf0f1; }
@@ -12,7 +16,7 @@
   background-color: #2980b9; }
 
 #contact-us > div {
-  background-image: url(/dist/img/DSC_0329.JPG); }
+  background-image: url(../img/DSC_0329.JPG); }
 
 .icon-button-2x {
   width: 72px;
