@@ -2,6 +2,9 @@
   background-image: url(/dist/img/DSC_0054.JPG);
   height: 100vh; }
 
+#main-heading {
+  margin-top: 25vh; }
+
 #we-provide {
   background-color: #ecf0f1; }
 
