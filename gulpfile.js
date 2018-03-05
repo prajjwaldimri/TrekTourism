@@ -37,7 +37,7 @@ gulp.task('images', function () {
     .src('./src/images/*')
     .pipe(
       imageresize({
-        percentage: 50
+        percentage: 20
       })
     )
     .pipe(
