@@ -1,39 +1,60 @@
-let gulp = require('gulp');
-let cleanCSS = require('gulp-clean-css');
-let uglify = require('gulp-uglify');
-let pump = require('pump');
-let imagemin = require('gulp-imagemin');
+const gulp = require('gulp');
+const pug = require('gulp-pug');
+const imagemin = require('gulp-imagemin');
+const imageresize = require('gulp-image-resize');
+const sass = require('gulp-sass');
+const uglify = require('gulp-uglify');
+const babel = require('gulp-babel');
 
-gulp.task('css-minfier', function () {
+gulp.task('pug', function () {
   return gulp
-    .src('source/css/*.css')
-    .pipe(cleanCSS())
-    .pipe(gulp.dest('public/css'));
+    .src('./src/views/*.pug')
+    .pipe(pug())
+    .pipe(gulp.dest('./'));
 });
 
-gulp.task('js-minfier', function () {
-  pump([gulp.src('source/js/*.js'), uglify(), gulp.dest('public/js')], () => {
-    console.log('Minifed Js');
-  });
+gulp.task('scss', function () {
+  return gulp
+    .src('./src/scss/*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./dist/css'));
 });
 
-gulp.task('img-minfier', function () {
-  gulp
-    .src('source/img/*')
+gulp.task('js', function () {
+  return gulp
+    .src('./src/js/*.js')
+    .pipe(
+      babel({
+        presets: ['env']
+      })
+    )
+    .pipe(uglify())
+    .pipe(gulp.dest('./dist/js'));
+});
+
+gulp.task('images', function () {
+  return gulp
+    .src('./src/images/*')
+    .pipe(
+      imageresize({
+        percentage: 50
+      })
+    )
     .pipe(
       imagemin([
-        imagemin.jpegtran({ progressive: true }),
-        imagemin.optipng({ optimizationLevel: 5 })
+        imagemin.jpegtran({
+          progressive: true
+        })
       ])
     )
-    .pipe(gulp.dest('public/img'));
+    .pipe(gulp.dest('./dist/img'));
 });
 
-// Watch Files For Changes
 gulp.task('watch', function () {
-  gulp.watch('source/js/*.js', ['js-minfier']);
-  gulp.watch('source/css/*.css', ['css-minfier']);
-  gulp.watch('source/img/*', ['img-minfier']);
+  gulp.watch('./src/js/*.js', ['js']);
+  gulp.watch('./src/scss/*.scss', ['scss']);
+  gulp.watch('./src/images/*', ['images']);
+  gulp.watch('./src/views/*.pug', ['pug']);
 });
 
-gulp.task('default', ['css-minfier', 'js-minfier', 'img-minfier']);
+gulp.task('default', ['pug', 'scss', 'js', 'images']);

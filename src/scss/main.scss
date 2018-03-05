@@ -1,0 +1,87 @@
+@import "_colors.scss";
+
+.hero-main {
+  background-image: url(../img/DSC_0054.JPG);
+  height: 100vh;
+}
+
+#top-nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+#we-provide {
+  background-color: $silver;
+}
+
+#trekking-destinations {
+  background-color: $belige-hole;
+}
+
+#contact-us > div {
+  background-image: url(../img/DSC_0329.JPG);
+}
+
+.icon-button-2x {
+  width: 72px;
+  height: 72px;
+}
+
+@media (min-width: 781px) {
+  .large-social-icons {
+    display: block;
+  }
+  .small-social-icons {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .large-social-icons {
+    display: none;
+  }
+  .small-social-icons {
+    display: block;
+  }
+}
+
+.uk-card-hover {
+  transition: all 500ms;
+}
+
+.uk-card-hover:hover {
+  transform: translateY(-5%);
+}
+
+// Dropdown content in tile
+a.text-black {
+  color: #999 !important;
+}
+
+#book-button-sticky {
+  position: fixed;
+  top: 90vh;
+  right: 1px;
+}
+
+/*-----------------FOOTER-----------*/
+
+.footer nav {
+  margin-left: 400px;
+  margin-bottom: 0px;
+}
+
+.footer nav ul li {
+  word-spacing: 0px;
+  display: inline-block;
+  color: #fff;
+}
+
+.footer {
+  width: 100%;
+  background-color: #222;
+  padding: 30px 0px;
+}
