@@ -1,5 +1,7 @@
 @import "_colors.scss";
-
+body {
+overflow-x : hidden;
+}
 .hero-main {
   background-image: url(../img/DSC_0054.JPG);
   height: 100vh;
