@@ -19,11 +19,19 @@ trekSelect.addEventListener('change', () => {
 CalculateTrekPrice();
 
 function CalculateTrekPrice () {
+  let discountPercent = 0;
+
+  if (trekPersons.value > 4) {
+    discountPercent = 5;
+  } else if (trekPersons.value > 9) {
+    discountPercent = 10;
+  }
   trekPriceFirst.textContent =
     '₹ ' +
     (
       trekSelect[trekSelect.selectedIndex].getAttribute('per-person-first') *
-      trekPersons.value
+      trekPersons.value *
+      ((100 - discountPercent) / 100)
     ).toLocaleString(undefined, {
       minimumFractionDigits: 0
     }) +
@@ -33,7 +41,8 @@ function CalculateTrekPrice () {
     '₹ ' +
     (
       trekSelect[trekSelect.selectedIndex].getAttribute('per-person-second') *
-      trekPersons.value
+      trekPersons.value *
+      ((100 - discountPercent) / 100)
     ).toLocaleString(undefined, {
       minimumFractionDigits: 0
     }) +
