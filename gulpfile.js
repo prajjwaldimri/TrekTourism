@@ -3,6 +3,9 @@ const pug = require('gulp-pug');
 const imagemin = require('gulp-imagemin');
 const imageresize = require('gulp-image-resize');
 const sass = require('gulp-sass');
+const postcss = require('gulp-postcss');
+const cssnano = require('cssnano');
+const autoprefixer = require('autoprefixer');
 const uglify = require('gulp-uglify');
 const babel = require('gulp-babel');
 
@@ -14,9 +17,11 @@ gulp.task('pug', function () {
 });
 
 gulp.task('scss', function () {
+  var plugins = [autoprefixer({ browsers: ['> 5%'] }), cssnano()];
   return gulp
     .src('./src/scss/*.scss')
     .pipe(sass())
+    .pipe(postcss(plugins))
     .pipe(gulp.dest('./dist/css'));
 });
 
