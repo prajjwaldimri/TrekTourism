@@ -74,7 +74,7 @@ html(lang="en")
         .uk-text-center
           h1.uk-text-uppercase.uk-text-primary.uk-heading-divider(uk-scrollspy="cls:uk-animation-fade") Services
           .uk-container(uk-grid).uk-margin-large-top
-            div(class="uk-width-1-3@m")
+            div(class="uk-width-1-2@m")
               .uk-card.uk-card-default.uk-card-hover
                 .uk-card-media-top
                   img(src="./dist/img/DSC_0329.JPG", alt="Camping Image")
@@ -86,7 +86,7 @@ html(lang="en")
                     li Jungle Camp
                     li Event Camping
 
-            div(class="uk-width-1-3@m")
+            div(class="uk-width-1-2@m")
               .uk-card.uk-card-secondary.uk-card-hover
                 .uk-card-media-top
                   img(src="./dist/img/DSC_0072.JPG", alt="Camping Image")
@@ -97,18 +97,6 @@ html(lang="en")
                     li Group Trekking
                     li Solo Trekking
                     li Family Trekking
-
-            div(class="uk-width-1-3@m")
-              .uk-card.uk-card-primary.uk-card-hover
-                .uk-card-media-top
-                  img(src="./dist/img/DSC_0051.JPG", alt="Camping Image")
-                .uk-card-body
-                  h3.uk-card-title Camping Accessories
-                  ul.uk-list.uk-list-small.uk-list-divider
-                    li Tent
-                    li Mattresses
-                    li Sleeping Bags
-                    li Event Camping
 
     .uk-section(id="trek-to-explore")
       .uk-background.uk-flex.uk-flex-column.uk-flex-middle.uk-flex-center
@@ -158,9 +146,9 @@ html(lang="en")
                   label.uk-form-label(for="trek-select") Trek
                   .uk-form-controls
                     select.uk-select(id="trek-select")
-                      option(value="satopanth", per-person="10000") Satopanth
-                      option(value="nanda", per-person="30000") Nanda
-                      option(value="chopta", per-person="20000") Chopta
+                      option(value="satopanth", duration-first="4 Nights 5 Days" per-person-first="10000", duration-second="5 Nights 6 Days" per-person-second="20000") Satopanth
+                      option(value="nanda", per-person-first="30000") Nanda
+                      option(value="chopta", per-person-first="20000") Chopta
 
               form(class="uk-width-1-2")
                 .uk-margin
@@ -169,7 +157,8 @@ html(lang="en")
                     input.uk-input(type="number", value="1", id="trek-persons", onchange="CalculateTrekPrice()", min="1", max="100")
 
             div(class="uk-width-1-4@m")
-              h2(id="trek-price").uk-text-success.uk-text-nowrap.uk-margin-small-top $ 40,000
+              h4(id="trek-price-first").uk-text-success.uk-margin-small-top $ 40,000
+              h4(id="trek-price-second").uk-text-success.uk-margin-small-top $ 40,000
 
             div(class="uk-width-1-1", id="trek-details")
 
