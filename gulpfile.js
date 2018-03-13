@@ -42,7 +42,9 @@ gulp.task('images', function () {
     .src('./src/images/*')
     .pipe(
       imageresize({
-        percentage: 20
+        width: 900,
+        height: 600,
+        crop: true
       })
     )
     .pipe(
