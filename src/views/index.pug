@@ -2,6 +2,8 @@ doctype html
 html(lang="en")
   head
     meta(http-equiv="Content-Type" content="text/html;charset=UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
     title Uttarakhand Treks
     link(href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css", rel="stylesheet")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js")
@@ -74,19 +76,25 @@ html(lang="en")
         .uk-text-center
           h1.uk-text-uppercase.uk-text-primary.uk-heading-divider(uk-scrollspy="cls:uk-animation-fade") Services
           .uk-container(uk-grid).uk-margin-large-top
-            div(class="uk-width-1-3@m")
-              .uk-card.uk-card-default.uk-card-hover
-                .uk-card-media-top
-                  img(src="./dist/img/DSC_0329.JPG", alt="Camping Image")
-                .uk-card-body
-                  h3.uk-card-title Camping
-                  ul.uk-list.uk-list-small.uk-list-divider
-                    li Luxury camping
-                    li Eco-Camp
-                    li Jungle Camp
-                    li Event Camping
+            div(class="uk-width-1-2@m").uk-card-custom
+              .card-front
+                .uk-card.uk-card-default
+                  .uk-card-media-top
+                    img(src="./dist/img/DSC_0329.JPG", alt="Camping Image")
+                  .uk-card-body
+                    h3.uk-card-title Camping
+                    ul.uk-list.uk-list-small.uk-list-divider
+                      li Luxury camping
+                      li Eco-Camp
+                      li Jungle Camp
+                      li Event Camping
 
-            div(class="uk-width-1-3@m")
+              .card-back
+                .uk-card.uk-card-default
+                  .uk-card-body
+                    h3.uk-card-title Camping
+
+            div(class="uk-width-1-2@m")
               .uk-card.uk-card-secondary.uk-card-hover
                 .uk-card-media-top
                   img(src="./dist/img/DSC_0072.JPG", alt="Camping Image")
@@ -122,7 +130,7 @@ html(lang="en")
                 img(data-src="./dist/img/Rupkund_1.JPG")
                 .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center.uk-transition-slide-bottom
                   h3.uk0-margin-bottom RoopKund Bedni Trek
-                  p.uk-margin-remove The Rookund Lake is captivating, adventurous and triggers fascination due to the enigma that goes about this mysterious lake. 
+                  p.uk-margin-remove The Rookund Lake is captivating, adventurous and triggers fascination due to the enigma that goes about this mysterious lake.
             li
               .uk-panel
                 img(data-src="./dist/img/valleyofflower.jpg")
@@ -146,7 +154,7 @@ html(lang="en")
                 img(data-src="./dist/img/chandrsila_3.jpg")
                 .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center.uk-transition-slide-bottom
                   h3.uk-margin-bottom Chopta Tungnath Chandrashila Trek
-                  p.uk-margin-remove Chandrashila is summit of the Tungnath . It literally means "Moon Rock". 
+                  p.uk-margin-remove Chandrashila is summit of the Tungnath . It literally means "Moon Rock".
             li
               .uk-panel
                 img(data-src="./dist/img/Dronagiri_3.JPG")
@@ -212,15 +220,14 @@ html(lang="en")
                         option(value="madmaheshwar", duration-first="7 Nights 8 Days" per-person-first="22500") Madmaheshwar-Nandikund-Bansinarayan-Kalpeshwar
                         option(value="denriyataal", duration-first="7 Nights 8 Days" per-person-first="22500") Denriyataal-Vidmitaal-Madhmaheshwar
                         option(value="rudranath", duration-first="2 Nights 3 Days" per-person-first="6500",duration-second="3 Nights 4 Days" per-person-second="8200") Rudranath Trek
-
-                      optgroup(label="Camping") 
+                      optgroup(label="Camping")
                         option(value="chopta", duration-first="1 Nights 2 Days" per-person-first="2500",duration-second="2 Nights 3 Days" per-person-second="4000") Chopta Camp
                         option(value="tolitaal", duration-first="1 Nights 2 Days" per-person-first="1800",duration-second="2 Nights 3 Days" per-person-second="2800") Tolitaal Camp
                         option(value="anusuiya", duration-first="1 Nights 2 Days" per-person-first="1800",duration-second="2 Nights 3 Days" per-person-second="2800") Anusuiya Camp
                         option(value="devriyataal", duration-first="1 Nights 2 Days" per-person-first="2200",duration-second="2 Nights 3 Days" per-person-second="3500") Devriyataal Camp
                         option(value="gorso_bugyal", duration-first="1 Nights 2 Days" per-person-first="3500",duration-second="2 Nights 3 Days" per-person-second="6200") Gorso Bugyal Camp
-                      
-                      
+
+
 
               form(class="uk-width-1-2")
                 .uk-margin
@@ -353,7 +360,7 @@ html(lang="en")
                 .uk-card-body
                   span.uk-card-title Rudranath Trek
                   p Rudranath is the fourth of Panch Kedar circit. The temple is situated at an altitude of 3400 meters, and it takes 22 km or four days of trekking and pony rides to make a visit to this unique temple.
-              
+
               .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin(uk-grid, class="uk-child-width-1-2@m", id="chopta", style="display:none;")
                 .uk-card-media-left.uk-cover-container
                   img(src="./dist/img/Chopta_1.JPG", uk-cover)
@@ -376,8 +383,8 @@ html(lang="en")
                   canvas(width="300", height="300")
                 .uk-card-body
                   span.uk-card-title Anusuiya Camp
-                  p Anusuya Devi Temple, popularly referred to as the duo of Anusuya Devi Temple & Atri Muni Ashram is a major pilgrim center for Kedarnath travelers. The deity of Anusuya Devi Temple is Devi Sati, the fully dedicated wife of Atri Muni, one among the Sapta Rishis. A large festival is organized here every year in the month of December during the time of Duttatreya Jayanti, attended by hundreds of devotees and tourists. They will spent the entire night by worshipping Goddess Sati with lighted lamps in their hands and Bhajans on their lips. It is believed that Brahma, Vishnu and Maheshswara took the form of Anusya Devi’s sons and lived here. Anusuya Devi Temple is about 19 km away from Gopeshwar, 29 km from Chamoli, and 30 km from Chopta. The 6 km trekking to this place starts from Mandal, which is about 13 km from Gopeshwar. Atri Muni Ashram is located at a distance of 2 km from Anasuya Devi Temple. 
-              
+                  p Anusuya Devi Temple, popularly referred to as the duo of Anusuya Devi Temple & Atri Muni Ashram is a major pilgrim center for Kedarnath travelers. The deity of Anusuya Devi Temple is Devi Sati, the fully dedicated wife of Atri Muni, one among the Sapta Rishis. A large festival is organized here every year in the month of December during the time of Duttatreya Jayanti, attended by hundreds of devotees and tourists. They will spent the entire night by worshipping Goddess Sati with lighted lamps in their hands and Bhajans on their lips. It is believed that Brahma, Vishnu and Maheshswara took the form of Anusya Devi’s sons and lived here. Anusuya Devi Temple is about 19 km away from Gopeshwar, 29 km from Chamoli, and 30 km from Chopta. The 6 km trekking to this place starts from Mandal, which is about 13 km from Gopeshwar. Atri Muni Ashram is located at a distance of 2 km from Anasuya Devi Temple.
+
               .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin(uk-grid, class="uk-child-width-1-2@m", id="devriyataal", style="display:none;")
                 .uk-card-media-left.uk-cover-container
                   img(src="./dist/img/DEVRIYATAAL.JPG", uk-cover)
@@ -392,7 +399,7 @@ html(lang="en")
                   canvas(width="300", height="300")
                 .uk-card-body
                   span.uk-card-title Gorso Bugyal Camp
-                  p Route to Auli - Gorson is one such fortuity a trekker can enjoy shuffling through some pages of geography. On this trek of Garhwal Himalayas, the intimidation doesn’t seem to cross mind due to its easy level. Staring from the Rishikesh to Joshimath to begin the trekking tour is the first step; every trekker has to take this in order to accomplish Auli Gorson Bugyal trekking. 
+                  p Route to Auli - Gorson is one such fortuity a trekker can enjoy shuffling through some pages of geography. On this trek of Garhwal Himalayas, the intimidation doesn’t seem to cross mind due to its easy level. Staring from the Rishikesh to Joshimath to begin the trekking tour is the first step; every trekker has to take this in order to accomplish Auli Gorson Bugyal trekking.
 
     .uk-section(id="upcoming-events")
       .uk-background.uk-flex.uk-flex-column.uk-flex-middle.uk-flex-center

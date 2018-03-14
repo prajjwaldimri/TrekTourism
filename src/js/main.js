@@ -37,16 +37,20 @@ function CalculateTrekPrice () {
     }) +
     ` (${trekSelect[trekSelect.selectedIndex].getAttribute('duration-first')})`;
 
-  trekPriceSecond.textContent =
-    '₹ ' +
-    (
-      trekSelect[trekSelect.selectedIndex].getAttribute('per-person-second') *
-      trekPersons.value *
-      ((100 - discountPercent) / 100)
-    ).toLocaleString(undefined, {
-      minimumFractionDigits: 0
-    }) +
-    ` (${trekSelect[trekSelect.selectedIndex].getAttribute(
-      'duration-second'
-    )})`;
+  if (trekSelect[trekSelect.selectedIndex].getAttribute('per-person-second')) {
+    trekPriceSecond.textContent =
+      '₹ ' +
+      (
+        trekSelect[trekSelect.selectedIndex].getAttribute('per-person-second') *
+        trekPersons.value *
+        ((100 - discountPercent) / 100)
+      ).toLocaleString(undefined, {
+        minimumFractionDigits: 0
+      }) +
+      ` (${trekSelect[trekSelect.selectedIndex].getAttribute(
+        'duration-second'
+      )})`;
+  } else {
+    trekPriceSecond.textContent = '';
+  }
 }
