@@ -13,10 +13,10 @@ html(lang="en")
     section(id="main")
       .hero-main.uk-background-cover.uk-background-secondary.uk-background-fixed.uk-flex.uk-flex-column.uk-flex-middle.uk-background-blend-multiply(style="justify-content: center")
         .uk-preserve-color.uk-width-1-1(class="uk-visible@m" id="top-nav")
-          div(uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200")
+          div(uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 100")
             nav(class="uk-navbar-container uk-height-1-3" uk-navbar style="position: relative; z-index: 980;" )
               div(class="uk-navbar-left")
-                  a(class="uk-navbar-item uk-logo" href="#main") UTTARAKHAND TREKS
+                  a(class="uk-navbar-item uk-logo" href="#main") Devbhoomi Treks 
               div(class="uk-navbar-right")
                   ul(class="uk-navbar-nav")
                     li
@@ -36,7 +36,7 @@ html(lang="en")
           a.uk-icon-button(uk-icon="icon: menu; ratio: 1" uk-toggle="target: #offcanvas-push" id="mobile-nav-button" uk-scrollspy="cls:uk-animation-scale-up; delay:500")
           div(id="offcanvas-push" uk-offcanvas="mode: push")
             div(class="uk-offcanvas-bar")
-              h2(class="uk-nav-header") UTTARAKHAND TREK
+              h2(class="uk-nav-header") Devbhoomi Treks
               ul(class="uk-nav uk-nav-default")
                 li
                   a(href="#main") Home
@@ -59,8 +59,8 @@ html(lang="en")
 
         .uk-flex.uk-flex-column.uk-flex-middle
           .uk-light.uk-text-center
-            h1.uk-heading-primary.uk-text-uppercase(uk-scrollspy="cls:uk-animation-fade") Uttarakhand Treks
-            span.uk-text-lead.uk-heading-bullet.uk-text-uppercase(uk-scrollspy="cls:uk-animation-fade; delay:1000") Cause Outside is where life is
+            h1.uk-heading-primary.uk-text-uppercase(uk-scrollspy="cls:uk-animation-fade") Devbhoomi Treks
+            span.uk-text-lead.uk-heading-bullet.uk-text-uppercase(uk-scrollspy="cls:uk-animation-fade; delay:1000") Aao kabhi Trek pe!
           div.uk-margin-medium-top.uk-button-group
             a.uk-button.uk-button-primary.uk-button-large(uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:2000", href="#contact-us", uk-scroll)
               span.uk-margin-small-right(uk-icon="receiver")
@@ -74,7 +74,7 @@ html(lang="en")
         .uk-text-center
           h1.uk-text-uppercase.uk-text-primary.uk-heading-divider(uk-scrollspy="cls:uk-animation-fade") Services
           .uk-container(uk-grid).uk-margin-large-top
-            div(class="uk-width-1-2@m")
+            div(class="uk-width-1-3@m")
               .uk-card.uk-card-default.uk-card-hover
                 .uk-card-media-top
                   img(src="./dist/img/DSC_0329.JPG", alt="Camping Image")
@@ -86,12 +86,24 @@ html(lang="en")
                     li Jungle Camp
                     li Event Camping
 
-            div(class="uk-width-1-2@m")
+            div(class="uk-width-1-3@m")
               .uk-card.uk-card-secondary.uk-card-hover
                 .uk-card-media-top
                   img(src="./dist/img/DSC_0072.JPG", alt="Camping Image")
                 .uk-card-body
                   h3.uk-card-title Trekking
+                  ul.uk-list.uk-list-small.uk-list-divider
+                    li Event Trekking
+                    li Group Trekking
+                    li Solo Trekking
+                    li Family Trekking
+            
+            div(class="uk-width-1-3@m")
+              .uk-card.uk-card-primary.uk-card-hover
+                .uk-card-media-top
+                  img(src="./dist/img/DSC_0072.JPG", alt="Camping Image")
+                .uk-card-body
+                  h3.uk-card-title Special Treks
                   ul.uk-list.uk-list-small.uk-list-divider
                     li Event Trekking
                     li Group Trekking
@@ -182,9 +194,14 @@ html(lang="en")
                   label.uk-form-label(for="trek-select") Trek
                   .uk-form-controls
                     select.uk-select(id="trek-select")
+                      optgroup(label="Special Treks")
+                        option(value="saptkund", duration-first="4 Nights 5 Days" per-person-first="15000", duration-second="5 Nights 6 Days" per-person-second="18000") Saptkund Trek
+                        option(value="dugdhkundi", duration-first="4 Nights 5 Days" per-person-first="15000", duration-second="5 Nights 6 Days" per-person-second="18000") Dugdhkundi Trek
+                        option(value="rishikund", duration-first="4 Nights 5 Days" per-person-first="15000", duration-second="5 Nights 6 Days" per-person-second="18000") Rishikund Trek
+                        option(value="kalpeshwar", duration-first="4 Nights 5 Days" per-person-first="15000", duration-second="5 Nights 6 Days" per-person-second="18000") Kalpeshwar-Rudranath Trek
+                        
                       optgroup(label="Trekking")
                         option(value="satopanth", duration-first="4 Nights 5 Days" per-person-first="10500", duration-second="5 Nights 6 Days" per-person-second="12000") Satopanth Trek
-                        option(value="saptkund", duration-first="4 Nights 5 Days" per-person-first="15000", duration-second="5 Nights 6 Days" per-person-second="18000") Saptkund Trek
                         option(value="roopkund", duration-first="3 Nights 4 Days" per-person-first="8500", duration-second="4 Nights 5 Days" per-person-second="10500") Roopkund Trek
                         option(value="dronagiri", duration-first="4 Nights 5 Days" per-person-first="12000", duration-second="6 Nights 7 Days" per-person-second="15500") Dronagiri Trek
                         option(value="kuwari_pass", duration-first="3 Nights 4 Days" per-person-first="8500", duration-second="5 Nights 6 Days" per-person-second="12000") Kuwari Pass Trek
@@ -195,6 +212,7 @@ html(lang="en")
                         option(value="madmaheshwar", duration-first="7 Nights 8 Days" per-person-first="22500") Madmaheshwar-Nandikund-Bansinarayan-Kalpeshwar
                         option(value="denriyataal", duration-first="7 Nights 8 Days" per-person-first="22500") Denriyataal-Vidmitaal-Madhmaheshwar
                         option(value="rudranath", duration-first="2 Nights 3 Days" per-person-first="6500",duration-second="3 Nights 4 Days" per-person-second="8200") Rudranath Trek
+
                       optgroup(label="Camping") 
                         option(value="chopta", duration-first="1 Nights 2 Days" per-person-first="2500",duration-second="2 Nights 3 Days" per-person-second="4000") Chopta Camp
                         option(value="tolitaal", duration-first="1 Nights 2 Days" per-person-first="1800",duration-second="2 Nights 3 Days" per-person-second="2800") Tolitaal Camp
@@ -216,7 +234,31 @@ html(lang="en")
 
             div(class="uk-width-1-1", id="trek-details")
 
-              .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin(uk-grid, class="uk-child-width-1-2@m", id="satopanth")
+              .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin(uk-grid, class="uk-child-width-1-2@m", id="dugdhkundi", style="display:none;")
+                .uk-card-media-left.uk-cover-container
+                  img(src="./dist/img/DSC_0330.JPG", uk-cover)
+                  canvas(width="300", height="300")
+                .uk-card-body
+                  span.uk-card-title Dughdkundi Trek
+                  p Satopanth is a secluded and untouched lake that lies close to the hustle-bustle of the holy town of BadrinathHidden amidst the most impressive ranges of the Garhwal region, this bright green lake exudes grace and serenity. It makes for a perfect detour from a pilgrimage to Badrinath.Although located just 22 km from the popular Badrinath, the trail has several hidden treasures.The short distance of Satopanth Lake Trek is well-compensated with a frequent change in sceneries.
+
+              .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin(uk-grid, class="uk-child-width-1-2@m", id="rishikund", style="display:none;")
+                .uk-card-media-left.uk-cover-container
+                  img(src="./dist/img/DSC_0330.JPG", uk-cover)
+                  canvas(width="300", height="300")
+                .uk-card-body
+                  span.uk-card-title Rishikund Trek
+                  p Satopanth is a secluded and untouched lake that lies close to the hustle-bustle of the holy town of BadrinathHidden amidst the most impressive ranges of the Garhwal region, this bright green lake exudes grace and serenity. It makes for a perfect detour from a pilgrimage to Badrinath.Although located just 22 km from the popular Badrinath, the trail has several hidden treasures.The short distance of Satopanth Lake Trek is well-compensated with a frequent change in sceneries.
+
+              .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin(uk-grid, class="uk-child-width-1-2@m", id="kalpeshwar", style="display:none;")
+                .uk-card-media-left.uk-cover-container
+                  img(src="./dist/img/DSC_0330.JPG", uk-cover)
+                  canvas(width="300", height="300")
+                .uk-card-body
+                  span.uk-card-title Kalpeshwar-Rudranath Trek
+                  p Satopanth is a secluded and untouched lake that lies close to the hustle-bustle of the holy town of BadrinathHidden amidst the most impressive ranges of the Garhwal region, this bright green lake exudes grace and serenity. It makes for a perfect detour from a pilgrimage to Badrinath.Although located just 22 km from the popular Badrinath, the trail has several hidden treasures.The short distance of Satopanth Lake Trek is well-compensated with a frequent change in sceneries.  
+
+              .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin(uk-grid, class="uk-child-width-1-2@m", id="satopanth", style="display:none;")
                 .uk-card-media-left.uk-cover-container
                   img(src="./dist/img/DSC_0330.JPG", uk-cover)
                   canvas(width="300", height="300")
@@ -224,7 +266,7 @@ html(lang="en")
                   span.uk-card-title Satopanth Trek
                   p Satopanth is a secluded and untouched lake that lies close to the hustle-bustle of the holy town of BadrinathHidden amidst the most impressive ranges of the Garhwal region, this bright green lake exudes grace and serenity. It makes for a perfect detour from a pilgrimage to Badrinath.Although located just 22 km from the popular Badrinath, the trail has several hidden treasures.The short distance of Satopanth Lake Trek is well-compensated with a frequent change in sceneries.
 
-              .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin(uk-grid, class="uk-child-width-1-2@m", id="saptkund", style="display:none;")
+              .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin(uk-grid, class="uk-child-width-1-2@m", id="saptkund")
                 .uk-card-media-left.uk-cover-container
                   img(src="./dist/img/DSC_0330.JPG", uk-cover)
                   canvas(width="300", height="300")
@@ -356,12 +398,12 @@ html(lang="en")
       .uk-background.uk-flex.uk-flex-column.uk-flex-middle.uk-flex-center
         .uk-light.uk-heading-divider.uk-text-center
           h1.uk-text-uppercase(uk-scrollspy="cls: uk-animation-fade") Upcoming Events
-        .uk-position-relative.uk-visible-toggle.uk-light(uk-slider="clsActivated: uk-transition-active; index: 3; autoplay: true; autoplay-interval: 5000; pause-on-hover: true", style="width: 95%")
-          .uk-container(uk-grid).uk-margin-large-top
-            ul.uk-slider-items.uk-child-width-1-3.uk-grid
+        .uk-position-relative.uk-visible-toggle.uk-light(uk-slider="clsActivated: uk-transition-active; index: 0; autoplay: true; autoplay-interval: 5000; pause-on-hover: true", style="width: 95%")
+          .uk-container.uk-margin-large-top
+            ul.uk-slider-items.uk-grid(class="uk-child-width-1-3@m")
               li
                 .uk-panel
-                  div(class="uk-width-1-3@m")
+                  div
                   .uk-card.uk-card-secondary.uk-card-hover
                     .uk-card-body
                       h3.uk-card-title Trekking Place 1
@@ -372,7 +414,6 @@ html(lang="en")
 
               li
                 .uk-panel
-                  div(class="uk-width-1-3@m")
                   .uk-card.uk-card-secondary.uk-card-hover
                     .uk-card-body
                       h3.uk-card-title Trekking Place 2
@@ -382,7 +423,6 @@ html(lang="en")
 
               li
                 .uk-panel
-                  div(class="uk-width-1-3@m")
                   .uk-card.uk-card-secondary.uk-card-hover
                     .uk-card-body
                       h3.uk-card-title Trekking Place 3
@@ -392,7 +432,6 @@ html(lang="en")
 
               li
                 .uk-panel
-                  div(class="uk-width-1-3@m")
                   .uk-card.uk-card-secondary.uk-card-hover
                     .uk-card-body
                       h3.uk-card-title Trekking Place 4
@@ -402,7 +441,6 @@ html(lang="en")
 
               li
                 .uk-panel
-                  div(class="uk-width-1-3@m")
                   .uk-card.uk-card-secondary.uk-card-hover
                     .uk-card-body
                       h3.uk-card-title Trekking Place 5
