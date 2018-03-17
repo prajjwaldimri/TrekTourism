@@ -4,7 +4,7 @@ html(lang="en")
     meta(http-equiv="Content-Type" content="text/html;charset=UTF-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     meta(name="viewport" content="width=device-width, initial-scale=1")
-    title Uttarakhand Treks
+    title Devbhoomi Trekker
     link(href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css", rel="stylesheet")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js")
@@ -14,11 +14,12 @@ html(lang="en")
   body
     section(id="main")
       .hero-main.uk-background-cover.uk-background-secondary.uk-background-fixed.uk-flex.uk-flex-column.uk-flex-middle.uk-background-blend-multiply(style="justify-content: center")
-        .uk-preserve-color.uk-width-1-1(class="uk-visible@m" id="top-nav")
-          div(uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200")
-            nav(class="uk-navbar-container uk-height-1-3" uk-navbar style="position: relative; z-index: 980;" )
+        .uk-preserve-color(class="uk-visible@m" id="top-nav")
+          div(uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 100")
+            nav(class="uk-navbar-container uk-height-1-3 uk-width-1-1"  uk-navbar style="position: relative; z-index: 980;" )
               div(class="uk-navbar-left")
-                  a(class="uk-navbar-item uk-logo" href="#main") UTTARAKHAND TREKS
+                  a(class="uk-navbar-item uk-logo" href="#main") DEVBHOOMI TREKKER
+
               div(class="uk-navbar-right")
                   ul(class="uk-navbar-nav")
                     li
@@ -38,7 +39,7 @@ html(lang="en")
           a.uk-icon-button(uk-icon="icon: menu; ratio: 1" uk-toggle="target: #offcanvas-push" id="mobile-nav-button" uk-scrollspy="cls:uk-animation-scale-up; delay:500")
           div(id="offcanvas-push" uk-offcanvas="mode: push")
             div(class="uk-offcanvas-bar")
-              h2(class="uk-nav-header") UTTARAKHAND TREK
+              h2(class="uk-nav-header") DEVBHOOMI TREKKER
               ul(class="uk-nav uk-nav-default")
                 li
                   a(href="#main") Home
@@ -50,7 +51,7 @@ html(lang="en")
                   a(href="#trek-to-explore") Trek to Explore
                 li(class="uk-nav-divider")
                 li
-                  a(href="#trek-to-explore") Upcoming Events
+                  a(href="#upcoming-events") Upcoming Events
                 li(class="uk-nav-divider")
                 li
                   a(href="#pricing-calculator") Pricing
@@ -61,8 +62,8 @@ html(lang="en")
 
         .uk-flex.uk-flex-column.uk-flex-middle
           .uk-light.uk-text-center
-            h1.uk-heading-primary.uk-text-uppercase(uk-scrollspy="cls:uk-animation-fade") Uttarakhand Treks
-            span.uk-text-lead.uk-heading-bullet.uk-text-uppercase(uk-scrollspy="cls:uk-animation-fade; delay:1000") Cause Outside is where life is
+            h1.uk-heading-primary.uk-text-uppercase(uk-scrollspy="cls:uk-animation-fade") Devbhoomi Trekker
+            span.uk-text-lead.uk-heading-bullet.uk-text-uppercase(uk-scrollspy="cls:uk-animation-fade; delay:1000") Explore the hidden beauty of Himalayas 
           div.uk-margin-medium-top.uk-button-group
             a.uk-button.uk-button-primary.uk-button-large(uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:2000", href="#contact-us", uk-scroll)
               span.uk-margin-small-right(uk-icon="receiver")
@@ -75,8 +76,8 @@ html(lang="en")
       .uk-background.uk-flex.uk-flex-column.uk-flex-middle.uk-flex-center
         .uk-text-center
           h1.uk-text-uppercase.uk-text-primary.uk-heading-divider(uk-scrollspy="cls:uk-animation-fade") Services
-          .uk-container(uk-grid).uk-margin-large-top
-            div(class="uk-width-1-2@m").uk-card-custom
+          .uk-container.uk-margin-large-top(uk-grid, class="uk-child-width-1-3@m")
+            div.uk-card-custom
               .card-front
                 .uk-card.uk-card-default
                   .uk-card-media-top
@@ -91,88 +92,128 @@ html(lang="en")
 
               .card-back
                 .uk-card.uk-card-default
+                  .uk-card-media-top
+                    img(src="./dist/img/tolitaal_4.JPG", alt="Camping Image")
                   .uk-card-body
                     h3.uk-card-title Camping
+                    ul.uk-list.uk-list-small.uk-list-divider
+                      li Chopta Champing
+                      li Anusuiya Camping
+                      li Deveriyataal Camping
+                      li Tolitaal Camping
+                      li Gorso Bugyal Camping
 
-            div(class="uk-width-1-2@m")
-              .uk-card.uk-card-secondary.uk-card-hover
-                .uk-card-media-top
-                  img(src="./dist/img/DSC_0072.JPG", alt="Camping Image")
-                .uk-card-body
-                  h3.uk-card-title Trekking
-                  ul.uk-list.uk-list-small.uk-list-divider
-                    li Event Trekking
-                    li Group Trekking
-                    li Solo Trekking
-                    li Family Trekking
+            div.uk-card-custom
+              .card-front
+                .uk-card.uk-card-primary
+                  .uk-card-media-top
+                    img(src="./dist/img/tolitaal_3.JPG", alt="Trekking Image")
+                  .uk-card-body
+                    h3.uk-card-title Trekking
+                    ul.uk-list.uk-list-small.uk-list-divider
+                      li Event Trekking
+                      li Solo Trekking
+                      li Group Trekking
+                      li Family Trekking
+
+              .card-back
+                .uk-card.uk-card-primary
+                  .uk-card-media-top
+                    img(src="./dist/img/rudrenath_4.jpg", alt="Trekking Image")
+                  .uk-card-body
+                    h3.uk-card-title Major Treks
+                    ul.uk-list.uk-list-small.uk-list-divider
+                      li Rudranath Trek
+                      li Roopkund Trek
+                      li Dronagiri Trek
+                      li Valley of Flower Trek
+
+            div.uk-card-custom
+              .card-front
+                .uk-card.uk-card-secondary
+                  .uk-card-media-top
+                    img(src="./dist/img/rudranath_3.jpg", alt="Trekking Image")
+                  .uk-card-body
+                    h3.uk-card-title Explore our Special Treks
+                    ul.uk-list.uk-list-small.uk-list-divider
+                      li Saptkund Trek
+                      li Dugdhkundi Trek
+                      li Rishikund Trek
+                      li Nandikund-Kalpeshwar Trek
+
+              .card-back
+                .uk-card.uk-card-secondary
+                  .uk-card-body
+                    h3.uk-card-title Feel the Untouched Beauty of Himalayas
+                    p These special treks gives you a sense of the untouched beauty of Himalayas. These are very rare trekking destinations, only local peoples are allowed to go there, if you want to experience the wonderful nature of these treks, than trek with us to these beautiful destinations. So are you ready for the overwhelming experience of Devbhoomi?
+            
 
     .uk-section(id="trek-to-explore")
       .uk-background.uk-flex.uk-flex-column.uk-flex-middle.uk-flex-center
         .uk-light
           h1.uk-text-uppercase.uk-heading-divider.uk-margin-large-bottom(uk-scrollspy="cls:uk-animation-fade") Trek to Explore
-
         .uk-position-relative.uk-visible-toggle.uk-light(uk-slider="clsActivated: uk-transition-active; index: 3; autoplay: true; autoplay-interval: 5000; pause-on-hover: true", style="width: 90%")
-          ul.uk-slider-items.uk-child-width-1-2
+          ul.uk-slider-items(class="uk-child-width-1-2@m")
             li
               .uk-panel
                 img(data-src="./dist/img/Rupkund_1.JPG")
                 .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center.uk-transition-slide-bottom
                   h3.uk0-margin-bottom RoopKund Bedni Trek
-                  p.uk-margin-remove The Rookund Lake is captivating, adventurous and triggers fascination due to the enigma that goes about this mysterious lake.
+                  p.uk-margin-remove(class="uk-visible@m") The Rookund Lake is captivating, adventurous and triggers fascination due to the enigma that goes about this mysterious lake.
             li
               .uk-panel
                 img(data-src="./dist/img/valleyofflower.jpg")
                 .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center.uk-transition-slide-bottom
                   h3.uk-margin-bottom Valley of Flower
-                  p.uk-margin-remove Valley of Flowers National Park is an Indian national park, located in West Himalaya, in the state of Uttarakhand
+                  p.uk-margin-remove(class="uk-visible@m") Valley of Flowers National Park is an Indian national park, located in West Himalaya, in the state of Uttarakhand
             li
               .uk-panel
                 img(data-src="./dist/img/DSC_0072.JPG")
                 .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center.uk-transition-slide-bottom
                   h3.uk-margin-bottom Satopant Trek
-                  p.uk-margin-remove Satopanth is a secluded and untouched lake that lies close to the hustle-bustle of the holy town of BadrinathHidden amidst the most impressive ranges of the Garhwal region
+                  p.uk-margin-remove(class="uk-visible@m") Satopanth is a secluded and untouched lake that lies close to the hustle-bustle of the holy town of BadrinathHidden amidst the most impressive ranges of the Garhwal region
             li
               .uk-panel
                 img(data-src="./dist/img/Rudranath_2.jpg")
                 .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center.uk-transition-slide-bottom
                   h3.uk-margin-bottom Rudranath Trek
-                  p.uk-margin-remove Rudranath is the fourth of Panch Kedar circit
+                  p.uk-margin-remove(class="uk-visible@m") Rudranath is the fourth of Panch Kedar circit
             li
               .uk-panel
                 img(data-src="./dist/img/chandrsila_3.jpg")
                 .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center.uk-transition-slide-bottom
                   h3.uk-margin-bottom Chopta Tungnath Chandrashila Trek
-                  p.uk-margin-remove Chandrashila is summit of the Tungnath . It literally means "Moon Rock".
+                  p.uk-margin-remove(class="uk-visible@m") Chandrashila is summit of the Tungnath . It literally means "Moon Rock".
             li
               .uk-panel
                 img(data-src="./dist/img/Dronagiri_3.JPG")
                 .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center.uk-transition-slide-bottom
                   h3.uk-margin-bottom Dronagiri Bagni Glacier Trek
-                  p.uk-margin-remove Dronagiri which is known for  its closeness to the nation’s most reverred epic – The Ramayana.
+                  p.uk-margin-remove(class="uk-visible@m") Dronagiri which is known for  its closeness to the nation’s most reverred epic – The Ramayana.
             li
               .uk-panel
                 img(data-src="./dist/img/bramataal.jpg")
                 .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center.uk-transition-slide-bottom
                   h3.uk-margin-bottom Brahmtaal Trek
-                  p.uk-margin-remove Lohajung is the base camp for the Brahmtal trek. The best way to reach here is from Kathgodam.
+                  p.uk-margin-remove(class="uk-visible@m") Lohajung is the base camp for the Brahmtal trek. The best way to reach here is from Kathgodam.
             li
               .uk-panel
                 img(data-src="./dist/img/kuwaripass.jpg")
                 .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center.uk-transition-slide-bottom
                   h3.uk-margin-bottom Kuwari Pass
-                  p.uk-margin-remove Kuwari pass trek which is passes via famous snow sports destination Auli
+                  p.uk-margin-remove(class="uk-visible@m") Kuwari pass trek which is passes via famous snow sports destination Auli
             li
               .uk-panel
                 img(data-src="./dist/img/kakbhusandi.jpg")
                 .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center.uk-transition-slide-bottom
                   h3.uk-margin-bottom Kakbhusandi Trek
-                  p.uk-margin-remove Kagbhusandi lake is a small and beautiful lake situated in Hathi Parvat.
+                  p.uk-margin-remove(class="uk-visible@m") Kagbhusandi lake is a small and beautiful lake situated in Hathi Parvat.
             li
               .uk-panel
                 img(data-src="./dist/img/auden.JPG")
                 .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-text-center.uk-transition-slide-bottom
                   h3.uk-margin-bottom Audens Colexpedition Trek
-                  p.uk-margin-remove Auden's Col is a high altitude trek - more of an expedition - in Garhwal Himalayas, Uttarakhand in India.
+                  p.uk-margin-remove(class="uk-visible@m") Auden's Col is a high altitude trek - more of an expedition - in Garhwal Himalayas, Uttarakhand in India.
           .uk-position-center-left.uk-position-small.uk-hidden-hover(uk-slidenav-previous uk-slider-item="previous")
           .uk-position-center-right.uk-position-small.uk-hidden-hover(uk-slidenav-next uk-slider-item="next")
 
@@ -190,9 +231,14 @@ html(lang="en")
                   label.uk-form-label(for="trek-select") Trek
                   .uk-form-controls
                     select.uk-select(id="trek-select")
+                      optgroup(label="Special Treks")
+                        option(value="saptkund", duration-first="4 Nights 5 Days" per-person-first="15000", duration-second="5 Nights 6 Days" per-person-second="18000") Saptkund Trek
+                        option(value="dugdhkundi", duration-first="4 Nights 5 Days" per-person-first="15000", duration-second="5 Nights 6 Days" per-person-second="18000") Dugdhkundi Trek
+                        option(value="rishikund", duration-first="4 Nights 5 Days" per-person-first="15000", duration-second="5 Nights 6 Days" per-person-second="18000") Rishikund Trek
+                        option(value="kalpeshwar", duration-first="4 Nights 5 Days" per-person-first="15000", duration-second="5 Nights 6 Days" per-person-second="18000") Nandiknd-Kalpeshwar Trek
+                        
                       optgroup(label="Trekking")
                         option(value="satopanth", duration-first="4 Nights 5 Days" per-person-first="10500", duration-second="5 Nights 6 Days" per-person-second="12000") Satopanth Trek
-                        option(value="saptkund", duration-first="4 Nights 5 Days" per-person-first="15000", duration-second="5 Nights 6 Days" per-person-second="18000") Saptkund Trek
                         option(value="roopkund", duration-first="3 Nights 4 Days" per-person-first="8500", duration-second="4 Nights 5 Days" per-person-second="10500") Roopkund Trek
                         option(value="dronagiri", duration-first="4 Nights 5 Days" per-person-first="12000", duration-second="6 Nights 7 Days" per-person-second="15500") Dronagiri Trek
                         option(value="kuwari_pass", duration-first="3 Nights 4 Days" per-person-first="8500", duration-second="5 Nights 6 Days" per-person-second="12000") Kuwari Pass Trek
@@ -224,7 +270,31 @@ html(lang="en")
 
             div(class="uk-width-1-1", id="trek-details")
 
-              .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin(uk-grid, class="uk-child-width-1-2@m", id="satopanth")
+              .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin(uk-grid, class="uk-child-width-1-2@m", id="dugdhkundi", style="display:none;")
+                .uk-card-media-left.uk-cover-container
+                  img(src="./dist/img/DSC_0330.JPG", uk-cover)
+                  canvas(width="300", height="300")
+                .uk-card-body
+                  span.uk-card-title Dughdkundi Trek
+                  p Satopanth is a secluded and untouched lake that lies close to the hustle-bustle of the holy town of BadrinathHidden amidst the most impressive ranges of the Garhwal region, this bright green lake exudes grace and serenity. It makes for a perfect detour from a pilgrimage to Badrinath.Although located just 22 km from the popular Badrinath, the trail has several hidden treasures.The short distance of Satopanth Lake Trek is well-compensated with a frequent change in sceneries.
+
+              .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin(uk-grid, class="uk-child-width-1-2@m", id="rishikund", style="display:none;")
+                .uk-card-media-left.uk-cover-container
+                  img(src="./dist/img/DSC_0330.JPG", uk-cover)
+                  canvas(width="300", height="300")
+                .uk-card-body
+                  span.uk-card-title Rishikund Trek
+                  p Satopanth is a secluded and untouched lake that lies close to the hustle-bustle of the holy town of BadrinathHidden amidst the most impressive ranges of the Garhwal region, this bright green lake exudes grace and serenity. It makes for a perfect detour from a pilgrimage to Badrinath.Although located just 22 km from the popular Badrinath, the trail has several hidden treasures.The short distance of Satopanth Lake Trek is well-compensated with a frequent change in sceneries.
+
+              .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin(uk-grid, class="uk-child-width-1-2@m", id="kalpeshwar", style="display:none;")
+                .uk-card-media-left.uk-cover-container
+                  img(src="./dist/img/DSC_0330.JPG", uk-cover)
+                  canvas(width="300", height="300")
+                .uk-card-body
+                  span.uk-card-title Kalpeshwar-Rudranath Trek
+                  p Satopanth is a secluded and untouched lake that lies close to the hustle-bustle of the holy town of BadrinathHidden amidst the most impressive ranges of the Garhwal region, this bright green lake exudes grace and serenity. It makes for a perfect detour from a pilgrimage to Badrinath.Although located just 22 km from the popular Badrinath, the trail has several hidden treasures.The short distance of Satopanth Lake Trek is well-compensated with a frequent change in sceneries.  
+
+              .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin(uk-grid, class="uk-child-width-1-2@m", id="satopanth", style="display:none;")
                 .uk-card-media-left.uk-cover-container
                   img(src="./dist/img/DSC_0330.JPG", uk-cover)
                   canvas(width="300", height="300")
@@ -232,7 +302,7 @@ html(lang="en")
                   span.uk-card-title Satopanth Trek
                   p Satopanth is a secluded and untouched lake that lies close to the hustle-bustle of the holy town of BadrinathHidden amidst the most impressive ranges of the Garhwal region, this bright green lake exudes grace and serenity. It makes for a perfect detour from a pilgrimage to Badrinath.Although located just 22 km from the popular Badrinath, the trail has several hidden treasures.The short distance of Satopanth Lake Trek is well-compensated with a frequent change in sceneries.
 
-              .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin(uk-grid, class="uk-child-width-1-2@m", id="saptkund", style="display:none;")
+              .uk-card.uk-card-default.uk-card-hover.uk-grid-collapse.uk-margin(uk-grid, class="uk-child-width-1-2@m", id="saptkund")
                 .uk-card-media-left.uk-cover-container
                   img(src="./dist/img/DSC_0330.JPG", uk-cover)
                   canvas(width="300", height="300")
@@ -359,64 +429,44 @@ html(lang="en")
                 .uk-card-body
                   span.uk-card-title Gorso Bugyal Camp
                   p Route to Auli - Gorson is one such fortuity a trekker can enjoy shuffling through some pages of geography. On this trek of Garhwal Himalayas, the intimidation doesn’t seem to cross mind due to its easy level. Staring from the Rishikesh to Joshimath to begin the trekking tour is the first step; every trekker has to take this in order to accomplish Auli Gorson Bugyal trekking.
+          
 
     .uk-section(id="upcoming-events")
       .uk-background.uk-flex.uk-flex-column.uk-flex-middle.uk-flex-center
         .uk-light.uk-heading-divider.uk-text-center
           h1.uk-text-uppercase(uk-scrollspy="cls: uk-animation-fade") Upcoming Events
-        .uk-position-relative.uk-visible-toggle.uk-light(uk-slider="clsActivated: uk-transition-active; index: 3; autoplay: true; autoplay-interval: 5000; pause-on-hover: true", style="width: 95%")
-          .uk-container(uk-grid).uk-margin-large-top
-            ul.uk-slider-items.uk-child-width-1-3.uk-grid
+        .uk-position-relative.uk-visible-toggle.uk-light(uk-slider="clsActivated: uk-transition-active; index: 0; autoplay: true; autoplay-interval: 5000; pause-on-hover: true", style="width: 95%")
+          .uk-container.uk-margin-large-top
+            ul.uk-slider-items.uk-grid(class="uk-child-width-1-3@m")
               li
                 .uk-panel
-                  div(class="uk-width-1-3@m")
+                  div
                   .uk-card.uk-card-secondary.uk-card-hover
                     .uk-card-body
-                      h3.uk-card-title Trekking Place 1
+                      h3.uk-card-title Rudranath Winter Trek
                       ul.uk-list.uk-list-small.uk-list-divider
-                        li Date :
-                        li Total Days :
+                        li Date : 29-March-2018 to 01-April-2018
+                        li Total Days : 4 Days
 
 
               li
                 .uk-panel
-                  div(class="uk-width-1-3@m")
                   .uk-card.uk-card-secondary.uk-card-hover
                     .uk-card-body
-                      h3.uk-card-title Trekking Place 2
+                      h3.uk-card-title Chopta Camping
                       ul.uk-list.uk-list-small.uk-list-divider
-                        li Date :
-                        li Total Days :
+                        li Date : 28-March-2018 to 29-March-2018
+                        li Total Days : 2 Days
 
               li
                 .uk-panel
-                  div(class="uk-width-1-3@m")
                   .uk-card.uk-card-secondary.uk-card-hover
                     .uk-card-body
-                      h3.uk-card-title Trekking Place 3
+                      h3.uk-card-title Devriyataal-Chopta-Tungnath-Chandrasila Trek
                       ul.uk-list.uk-list-small.uk-list-divider
-                        li Date :
-                        li Total Days :
+                        li Date : 29-March-2018 to 02-April-2018
+                        li Total Days : 5 Days
 
-              li
-                .uk-panel
-                  div(class="uk-width-1-3@m")
-                  .uk-card.uk-card-secondary.uk-card-hover
-                    .uk-card-body
-                      h3.uk-card-title Trekking Place 4
-                      ul.uk-list.uk-list-small.uk-list-divider
-                        li Date :
-                        li Total Days :
-
-              li
-                .uk-panel
-                  div(class="uk-width-1-3@m")
-                  .uk-card.uk-card-secondary.uk-card-hover
-                    .uk-card-body
-                      h3.uk-card-title Trekking Place 5
-                      ul.uk-list.uk-list-small.uk-list-divider
-                        li Date :
-                        li Total Days :
             .uk-position-center-left.uk-position-small.uk-hidden-hover(uk-slidenav-previous uk-slider-item="previous")
             .uk-position-center-right.uk-position-small.uk-hidden-hover(uk-slidenav-next uk-slider-item="next")
 
@@ -427,29 +477,40 @@ html(lang="en")
           span.uk-text-lead(uk-scrollspy="cls:uk-animation-fade; delay:500") We are available 24 hours to help.
 
         .large-social-icons.uk-margin-medium-top
-          a.uk-icon-button.uk-margin-medium-right.icon-button-2x(uk-icon="icon: facebook; ratio: 2;", style="background-color: #3b5998; color:white;", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:1000")
-          a.uk-icon-button.uk-margin-medium-right.icon-button-2x(uk-icon="icon: google; ratio: 2", style="background-color: #34a853; color:white;", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:1500")
+          a.uk-icon-button.uk-margin-medium-right.icon-button-2x(href="https://m.facebook.com/devbhoomitrekker/?ref=bookmarks" uk-icon="icon: facebook; ratio: 2;", style="background-color: #3b5998; color:white;", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:1000")
+          a.uk-icon-button.uk-margin-medium-right.icon-button-2x(href="mailto:devbhoomitrekkerchamoli@gmail.com" uk-icon="icon: google; ratio: 2", style="background-color: #34a853; color:white;", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:1500")
           a.uk-icon-button.uk-margin-medium-right.icon-button-2x(uk-icon="icon: instagram; ratio: 2", style="background-color: #405de6; color:white;", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:2000")
-          a.uk-icon-button.uk-margin-medium-right.icon-button-2x(uk-icon="icon: receiver; ratio: 2", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:2500")
-          a.uk-icon-button.icon-button-2x(uk-icon="icon: whatsapp; ratio: 2", style="background-color: #25d366; color:white;", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:3000")
+          a.uk-icon-button.uk-margin-medium-right.icon-button-2x(href="tel:+919012732281" uk-icon="icon: receiver; ratio: 2", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:2500")
+          a.uk-icon-button.icon-button-2x(href="tel:+919012732281" uk-icon="icon: whatsapp; ratio: 2", style="background-color: #25d366; color:white;", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:3000")
 
         .small-social-icons.uk-margin-medium-top
-          a.uk-icon-button.uk-margin-small-right.icon-button-1x(uk-icon="icon: facebook; ratio: 1;", style="background-color: #3b5998; color:white;", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:1000")
-          a.uk-icon-button.uk-margin-small-right.icon-button-1x(uk-icon="icon: google; ratio: 1", style="background-color: #34a853; color:white;", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:1500")
+          a.uk-icon-button.uk-margin-small-right.icon-button-1x(href="https://m.facebook.com/devbhoomitrekker/?ref=bookmarks" uk-icon="icon: facebook; ratio: 1;", style="background-color: #3b5998; color:white;", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:1000")
+          a.uk-icon-button.uk-margin-small-right.icon-button-1x(href="mailto:devbhoomitrekkerchamoli@gmail.com" uk-icon="icon: google; ratio: 1", style="background-color: #34a853; color:white;", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:1500")
           a.uk-icon-button.uk-margin-small-right.icon-button-1x(uk-icon="icon: instagram; ratio: 1", style="background-color: #405de6; color:white;", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:2000")
-          a.uk-icon-button.uk-margin-small-right.icon-button-1x(uk-icon="icon: receiver; ratio: 1", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:2500")
-          a.uk-icon-button.icon-button-1x(uk-icon="icon: whatsapp; ratio: 1", style="background-color: #25d366; color:white;", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:3000")
+          a.uk-icon-button.uk-margin-small-right.icon-button-1x(href="tel:+919012732281" uk-icon="icon: receiver; ratio: 1", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:2500")
+          a.uk-icon-button.icon-button-1x(href="tel:+919012732281" uk-icon="icon: whatsapp; ratio: 1", style="background-color: #25d366; color:white;", uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:3000")
 
     div(id="book-button-sticky")
       a.uk-button.uk-button-danger(href="#contact-us", uk-scroll) Book Now
 
-    footer(class="footer")
+    footer(class="footer uk-visible@m")
       .uk-background.uk-background-secondary.uk-flex.uk-flex-column.uk-flex-middle.uk-flex-center
         .uk-light.uk-text-center
           span.uk-text-uppercase.uk-heading-line(uk-scrollspy="cls:uk-animation-fade")
             span Designed by-
               a(href="https://prajjwaldimri.me")  Prajjwal Dimri
-              | |
+              |  |
+              a(href="https://t.me/ayushbahuguna")  Ayush Bahuguna
+
+    footer(class="footer uk-hidden@m")
+      .uk-background.uk-background-secondary.uk-flex.uk-flex-column.uk-flex-middle.uk-flex-center
+        .uk-light.uk-text-left
+        span.uk-text-uppercase Designed by
+        .uk-light.uk-text-left
+          span.uk-text-uppercase.uk-heading-line(uk-scrollspy="cls:uk-animation-fade")
+            span
+              a(href="https://prajjwaldimri.me")  Prajjwal Dimri
+                |  |
               a(href="https://t.me/ayushbahuguna")  Ayush Bahuguna
 
 

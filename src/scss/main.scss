@@ -14,9 +14,10 @@ body {
 #top-nav {
   display: block;
   position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
-  z-index: 10000;
+  z-index: 980;
 }
 
 #mobile-nav-button {
@@ -43,10 +44,12 @@ body {
 
   &:hover .card-front {
     transform: rotateY(-180deg);
+    position: absolute;
   }
 
   &:hover .card-back {
     transform: rotateY(0);
+    position: relative;
   }
 
   .card-front {
@@ -54,12 +57,11 @@ body {
       width: 100%;
       height: 100%;
     }
+
     width: 100%;
     height: 100%;
     transition: all 800ms ease;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     backface-visibility: hidden;
   }
 
@@ -72,7 +74,6 @@ body {
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
     transition: all 800ms ease;
     transform: rotateY(180deg);
     backface-visibility: hidden;
@@ -119,7 +120,7 @@ a.text-black {
 
 #book-button-sticky {
   position: fixed;
-  top: 90vh;
+  top: 80vh;
   right: 1px;
 }
 
