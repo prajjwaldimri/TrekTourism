@@ -20,6 +20,13 @@ body {
   z-index: 980;
 }
 
+.uk-navbar-transparent .uk-navbar-left #sticky-logo{
+  display: none;
+}
+.uk-navbar-sticky .uk-navbar-left #transparent-logo{
+  display: none;
+}
+
 #mobile-nav-button {
   position: fixed;
   top: 2rem;
@@ -159,4 +166,15 @@ a.text-black {
   .small-social-icons {
     display: block;
   }
+}
+
+@media only screen and (max-width: 700px){
+#trek-to-explore .uk-overlay{
+padding: 0px; 
+}
+#trek-to-explore h3{
+  font-size: 14px;
+  margin-top: 15px;
+  }
+  
 }
