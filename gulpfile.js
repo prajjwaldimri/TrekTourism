@@ -43,8 +43,7 @@ gulp.task('images', function () {
     .pipe(
       imageresize({
         width: 900,
-        height: 600,
-        crop: true
+        height: 600
       })
     )
     .pipe(
