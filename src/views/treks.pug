@@ -14,29 +14,57 @@ html(lang="en")
     body
         section(id="main")
             .hero-treks-main.uk-background-cover.uk-background-secondary.uk-background-fixed.uk-flex.uk-flex-column.uk-flex-middle.uk-background-blend-multiply(style="justify-content: center")
+                .uk-preserve-color(class="uk-visible@m" id="top-nav")
+                    div(uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-dark; cls-inactive: uk-navbar-transparent uk-light; top: 100")
+                        nav(class="uk-navbar-container uk-height-1-3 uk-width-1-1"  uk-navbar style="position: relative; z-index: 980;" )
+                            div(class="uk-navbar-right")
+                                ul(class="uk-navbar-nav" style="padding-right:2rem;")
+                                    li
+                                        a(href="index.html") Home
                 .uk-flex.uk-flex-column.uk-flex-middle
                     .uk-light.uk-text-center
                         h1.uk-heading-primary.uk-text-uppercase(uk-scrollspy="cls:uk-animation-fade") Satopanth Trek
                         span.uk-text-lead.uk-heading-bullet.uk-text-uppercase(uk-scrollspy="cls:uk-animation-fade; delay:1000") Feel the Heaven on Earth
 
-        .uk-column-1-2
+        .uk-column-1-2(style="padding:1rem;")
              .uk-section(id="about-trek")
                 .uk-background.uk-flex.uk-flex-column.uk-flex-middle.uk-flex-center
                     .uk-text-center
                         h1.uk-text-uppercase.uk-text-primary.uk-heading-divider(uk-scrollspy="cls:uk-animation-fade") About The Trek
+                        p(style="text-align:justify;") Satopanth is a secluded and untouched lake that lies close to the hustle-bustle of the holy town of BadrinathHidden amidst the most impressive ranges of the Garhwal region, this bright green lake exudes grace and serenity. It makes for a perfect detour from a pilgrimage to Badrinath.Although located just 22 km from the popular Badrinath, the trail has several hidden treasures.The short distance of Satopanth Lake Trek is well-compensated with a frequent change in sceneries.
              .uk-section(id="map")
                 .uk-background.uk-flex.uk-flex-column.uk-flex-middle.uk-flex-center
                     .uk-text-center
                         h1.uk-text-uppercase.uk-text-primary.uk-heading-divider(uk-scrollspy="cls:uk-animation-fade") Map
                     #google-map(style="width:100%;height:600px;")
+        
+        footer(class="footer uk-visible@m")
+            .uk-background.uk-background-secondary.uk-flex.uk-flex-column.uk-flex-middle.uk-flex-center
+                .uk-light.uk-text-center
+                    .uk-text-uppercase.uk-heading-line(uk-scrollspy="cls:uk-animation-fade")
+                        span Designed by-
+                            a(href="https://prajjwaldimri.me")  Prajjwal Dimri
+                            |  |
+                            a(href="https://t.me/ayushbahuguna")  Ayush Bahuguna
+
+        footer(class="footer uk-hidden@m")
+            .uk-background.uk-background-secondary.uk-flex.uk-flex-column.uk-flex-middle.uk-flex-center
+                .uk-light.uk-text-left
+                span.uk-text-uppercase Designed by
+                .uk-light.uk-text-left
+                    .uk-text-uppercase.uk-heading-line(uk-scrollspy="cls:uk-animation-fade")
+                        span
+                            a(href="https://prajjwaldimri.me")  Prajjwal Dimri
+                                |  |
+                            a(href="https://t.me/ayushbahuguna")  Ayush Bahuguna
 
         script.
             function googleMap() {
-            var myCenter = new google.maps.LatLng(30.7437,79.3569);
+            var trekCenter = new google.maps.LatLng(30.7437,79.3569);
             var mapCanvas = document.getElementById("google-map");
-            var mapOptions = {center: myCenter, zoom: 5};
+            var mapOptions = {center: trekCenter, zoom: 5};
             var map = new google.maps.Map(mapCanvas, mapOptions);
-            var marker = new google.maps.Marker({position:myCenter});
+            var marker = new google.maps.Marker({position:trekCenter});
             marker.setMap(map);
             }
         script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbJBVyCkDcFy7xSB4rY7DxXUgRwj1RcuA&callback=googleMap")
